@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Manhattanville features feature.
+ */
+
+include_once 'manhattanville_features.features.inc';
