@@ -39,3 +39,4 @@ xmlrpc.php
 # Ignore others
 .DS_Store
 .project
+settings.php
