@@ -13,9 +13,15 @@ projects[diff][version] = "3.2"
 
 projects[features][version] = "2.0-rc3"
 
+projects[google_fonts][version] = "2.3"
+
 projects[jquery_update][version] = "2.3"
 
+projects[pathauto][version] = "1.2"
+
 projects[strongarm][version] = "2.0"
+
+projects[token][version] = "1.5"
 
 projects[views][version] = "3.7"
 
@@ -30,5 +36,5 @@ projects[tao][version] = "3.0-beta4"
 projects[manhattanville][type] = "module"
 projects[manhattanville][download][type] = "git"
 projects[manhattanville][download][url] = "https://github.com/dismorfo/manhattanville.git"
-projects[manhattanville][download][revision] = "321c30a427b94334f2db539fcddfad8f688e4c28"
+projects[manhattanville][download][revision] = "a84244dd743f7fbadc1a803fe0de14eab855fa9c"
 
