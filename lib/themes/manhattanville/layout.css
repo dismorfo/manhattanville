@@ -1,0 +1,146 @@
+/**
+ * @file
+ * layout method
+ */
+ 
+@import url("http://yui.yahooapis.com/pure/0.2.1/pure-min.css");
+
+    body {
+      font-family: 'Dosis', sans-serif;
+      /** width: 1024px; */
+      /** min-width: 1024px; */
+    }
+    
+    .page {
+      width: 1024px;
+      min-width: 950px;
+      margin: 0 auto;
+      overflow-y: hidden;
+    }
+    
+    .page .node {
+      max-width: 530px;
+      width: 530px;
+      color: #333333;
+      font-size: 16px;      
+    }
+    
+    p {
+      font-size: 16px;
+      line-height: 25px;
+    }
+    
+    .l-box {
+      padding: 1em;
+    }
+    
+    .banner {
+      background-position-x: 0px;
+      background-position-y: 0px;    	
+      background-size: cover;
+      text-align: center;
+      background-repeat-x: no-repeat;
+      background-repeat-y: no-repeat;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial;
+      background-color: transparent;
+      height: 352px;
+      width: 100%;
+      display: table;
+    }
+
+    .box-with-radius {
+      background: #c6d0d1;
+      border-radius: 5px;
+    }    
+    
+    .box p {
+      font-size: 15px;
+      line-height: 18px;      
+    }
+    
+    a, a:visited, a:link  {
+      color: #163e75;
+      text-decoration: none;
+    }
+    
+    .sub-section-title {
+      font-size: 13px;
+      line-height: auto;
+      text-align: right;
+    }
+    
+    .nav {
+      background-color: #163e75;
+      height: 50px;
+      vertical-align: middle;
+      margin: auto 0;
+      padding: auto 0;      
+    }
+    
+    .nav a, .nav a:link, .nav:visited {
+      color: #f8f5f5;
+    }
+    
+    .pure-menu-selected a {
+      text-decoration: overline
+    }
+    
+    .pure-menu.pure-menu-open, .pure-menu.pure-menu-horizontal li .pure-menu-children {
+      background-color: #163e75;
+    }
+    
+    .nav {
+      font-family: 'Oswald', sans-serif;
+    } 
+    
+    .nav .pure-menu {
+      vertical-align: middle;
+      margin: auto 0;
+    }
+    
+    .nav .pure-menu, .nav .pure-menu li {
+      height: 50px;
+    }
+    
+    .top, .footer {
+      background-color: #163e75;
+    }
+
+
+.element-invisible {
+  position:absolute; 
+  left:-10000px; 
+  top:auto; 
+  width:1px; 
+  height:1px; 
+  overflow:hidden;
+}
+
+
+
+.top {
+	height: 98px;
+}
+
+.top .pane.right {
+	position: relative;
+	float: right;
+}
+
+
+
+/** Main menu */
+	
+.pure-menu {
+  color: #fff;
+}
+
+.pure-menu a, .pure-menu a:link, .pure-menu a:visited {
+  color: #fff;
+}
+
+.pure-menu li a:hover, .pure-menu li a:focus {
+  background: inherit;
+}

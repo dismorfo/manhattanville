@@ -5,6 +5,8 @@ api = 2
 projects[drupal][version] = "7.x"
 
 ; Modules
+projects[backgroundfield][version] = "1.5"
+
 projects[ctools][version] = "1.3"
 
 projects[devel][version] = "1.3"
@@ -26,15 +28,16 @@ projects[token][version] = "1.5"
 projects[views][version] = "3.7"
 
 ; Themes
-projects[bootstrap][version] = "2.1"
-
 projects[rubik][version] = "4.0-beta9"
 
 projects[tao][version] = "3.0-beta4"
 
-; Modules
-projects[manhattanville][type] = "module"
-projects[manhattanville][download][type] = "git"
-projects[manhattanville][download][url] = "https://github.com/dismorfo/manhattanville.git"
-projects[manhattanville][download][revision] = "a84244dd743f7fbadc1a803fe0de14eab855fa9c"
+; Others
 
+projects[manhattanville_features][download][type] = "get"
+projects[manhattanville_features][download][url] = "http://purplescripts.net/manhattanville.zip"
+projects[manhattanville_features][type] = "module"
+
+projects[manhattanville][download][type] = "get"
+projects[manhattanville][download][url] = "http://purplescripts.net/manhattanville_features.zip"
+projects[manhattanville][type] = "theme"
