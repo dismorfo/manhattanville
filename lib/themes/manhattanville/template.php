@@ -4,10 +4,6 @@
  * Override or insert variables into the page template.
  */
 function manhattanville_preprocess_page(&$vars) {
-	
-  dpm($vars);
-
-  drupal_add_css('http://yui.yahooapis.com/pure/0.3.0/pure-min.css', 'external', array('group' => CSS_THEME, 'weight' => -100 ));
 
   $cssConf = array(
     'group' => CSS_THEME,
