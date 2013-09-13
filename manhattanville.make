@@ -35,9 +35,9 @@ projects[tao][version] = "3.0-beta4"
 ; Others
 
 projects[manhattanville_features][download][type] = "get"
-projects[manhattanville_features][download][url] = "http://purplescripts.net/manhattanville.zip"
+projects[manhattanville_features][download][url] = "https://www.dropbox.com/s/xzsjfaove6h8avh/manhattanville.zip"
 projects[manhattanville_features][type] = "module"
 
 projects[manhattanville][download][type] = "get"
-projects[manhattanville][download][url] = "http://purplescripts.net/manhattanville_features.zip"
+projects[manhattanville][download][url] = "https://www.dropbox.com/s/8sty4c2v4akoeel/manhattanville_features.zip"
 projects[manhattanville][type] = "theme"
