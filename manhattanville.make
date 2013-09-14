@@ -30,8 +30,6 @@ projects[token][version] = "1.5"
 projects[views][version] = "3.7"
 
 ; Themes
-projects[bootstrap][version] = "2.1"
-
 projects[rubik][version] = "4.0-beta9"
 
 projects[tao][version] = "3.0-beta4"
