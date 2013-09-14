@@ -1,0 +1,12 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the block_manhattanville module.
+ */
+
+/**
+ * Implements hook_uninstall().
+ *
+ * @ingroup block_manhattanville
+ */
+

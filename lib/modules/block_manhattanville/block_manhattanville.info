@@ -1,0 +1,4 @@
+name = block_manhattanville
+description = Define Manhattanville blocks.
+core = 7.x
+dependencies[] = block
