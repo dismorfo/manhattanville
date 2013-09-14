@@ -76,6 +76,16 @@ function manhattanville_features_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'footer_message_msg';
+  $strongarm->value = array(
+    'value' => '&copy; 2013 Columbia University',
+    'format' => 'filtered_html',
+  );
+  $export['footer_message_msg'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'google_fonts_enabled_fonts';
   $strongarm->value = array(
     'Dosis' => array(

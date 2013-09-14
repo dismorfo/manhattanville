@@ -34,27 +34,24 @@ function manhattanville_preprocess_page(&$vars) {
 
   }
   
-  $menu_tree = menu_tree_page_data('main-menu');
+  $footer_message = module_invoke('footer_message', 'block_view', 'footer_message');
   
-  $vars['main_menu_tree'] = menu_tree_output($menu_tree);
+  $vars['footer_message'] = $footer_message['content'];
+  
+  $main_menu_tree = menu_tree_page_data('main-menu');
+  
+  $footer_menu_tree = menu_tree_page_data('menu-footer-menu');
+  
+  $vars['main_menu_tree'] = menu_tree_output($main_menu_tree);
+  
+  $vars['footer_menu_tree'] = menu_tree_output($footer_menu_tree);
 
-  foreach ($menu_tree as $key => $m) {
-    if ($m['link']['in_active_trail'] && $menu_tree[$key]['below']) {
-      $vars['active_menu_tree'] = menu_tree_output($menu_tree[$key]['below']);
+  foreach ($main_menu_tree as $key => $m) {
+    if ($m['link']['in_active_trail'] && $main_menu_tree[$key]['below']) {
+      $vars['active_menu_tree'] = menu_tree_output($main_menu_tree[$key]['below']);
     }  
   }
-
-  $vars['primary_local_tasks'] = $vars['tabs'];
-
-  unset($vars['primary_local_tasks']['#secondary']);
-
-  $vars['secondary_local_tasks'] = array(
-    '#theme' => 'menu_local_tasks',
-    '#secondary' => $vars['tabs']['#secondary'],
-  );
-
-  $vars['primary_local_tasks'] = $vars['tabs'];
-
+  
 }
 
 /**
