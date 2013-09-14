@@ -9,7 +9,8 @@
       
       <div class="pure-g columbia">
         <div class="pure-u-1-2">
-          <div class="pane left"></div>
+          <div class="pane left">
+          </div>
         </div>
         <div class="pure-u-1-2">
           <div class="pane right">
