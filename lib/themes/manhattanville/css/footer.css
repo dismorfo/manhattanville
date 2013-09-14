@@ -1,0 +1,19 @@
+  .main .footer {
+    background-color: #163e75;
+    height: 130px;
+  }
+  
+  .main .footer .pure-menu a {
+  	color: #fff;
+  	text-transform: uppercase;
+  }
+  
+  .main .footer .pure-menu.pure-menu-open, 
+  .main .footer .pure-menu.pure-menu-horizontal li .pure-menu-children {
+    background-color: #163e75;
+  }
+    
+  .main .footer .pure-menu li a:hover, 
+  .main .footer .pure-menu li a:focus {
+    background: inherit;
+  }

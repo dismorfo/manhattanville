@@ -1,0 +1,13 @@
+body {
+  font-family: 'Dosis', sans-serif;
+}
+
+p {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+a, a:visited, a:link  {
+  color: #163e75;
+  text-decoration: none;
+}

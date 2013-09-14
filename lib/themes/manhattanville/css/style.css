@@ -1,0 +1,28 @@
+.box-with-radius {
+  background: #c6d0d1;
+  border-radius: 5px;
+}
+
+.box p {
+  font-size: 15px;
+  line-height: 18px;      
+}
+
+.sub-section-title {
+  font-size: 13px;
+  line-height: auto;
+  text-align: right;
+}
+
+.element-invisible {
+  position:absolute; 
+  left:-10000px; 
+  top:auto; 
+  width:1px; 
+  height:1px; 
+  overflow:hidden;
+}
+
+.l-box {
+  padding: 1em;
+}

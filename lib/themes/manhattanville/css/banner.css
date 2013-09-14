@@ -1,0 +1,15 @@
+
+  .main .banner {
+    background-position-x: 0px;
+    background-position-y: 0px;    	
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: transparent;
+    height: 352px;
+    width: 100%;
+    display: table;
+  }

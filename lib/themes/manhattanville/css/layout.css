@@ -1,0 +1,17 @@
+.main {
+  width: 1024px;
+  min-width: 950px;
+  margin: 0 auto;
+  overflow-y: hidden;
+}
+    
+
+  
+  .main .node {
+    max-width: 530px;
+    width: 530px;
+    color: #333333;
+    font-size: 16px;      
+  }
+
+

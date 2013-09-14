@@ -3,8 +3,7 @@ description = Manhattanville theme.
 package = manhattanville
 version = VERSION
 core = 7.x
-stylesheets[all][] = layout.css
-
+stylesheets[all][] = css/base.css
 scripts[] = js/manhattanville.js
 
 regions[page_first] = Page top

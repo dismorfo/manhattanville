@@ -1,0 +1,35 @@
+  .main .nav {
+  	font-family: 'Oswald', sans-serif;
+    background-color: #163e75;
+    height: 50px;
+    vertical-align: middle;
+    margin: auto 0;
+    padding: auto 0;      
+  }
+  
+    .main .nav a, 
+    .main .nav a:link, 
+    .main .nav a:visited {
+      color: #f8f5f5;
+    }
+
+    .main .nav .pure-menu {
+      vertical-align: middle;
+      margin: auto 0;
+      color: #fff;
+    }
+
+    .main .nav .pure-menu.pure-menu-open, 
+    .main .nav .pure-menu.pure-menu-horizontal li .pure-menu-children {
+      background-color: #163e75;
+    }
+    
+    .main .nav .pure-menu li a:hover, 
+    .main .nav .pure-menu li a:focus {
+      background: inherit;
+    }
+    
+    .main .nav .pure-menu, 
+    .main .nav .pure-menu li {
+      height: 50px;
+    }

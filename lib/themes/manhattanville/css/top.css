@@ -1,0 +1,9 @@
+  .main .top {
+    background-color: #163e75;
+    height: 98px;
+  }
+
+  .main .top .pane.right {
+    position: relative;
+	float: right;
+  }
