@@ -36,7 +36,11 @@ function manhattanville_preprocess_page(&$vars) {
   
   $footer_message = module_invoke('footer_message', 'block_view', 'footer_message');
   
+  $manhattanville_search_widget = module_invoke('block_manhattanville', 'block_view', 'manhattanville_search_widget');
+  
   $vars['footer_message'] = $footer_message['content'];
+  
+  $vars['manhattanville_search_widget'] = $manhattanville_search_widget['content'];
   
   $main_menu_tree = menu_tree_page_data('main-menu');
   

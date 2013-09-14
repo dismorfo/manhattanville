@@ -1,7 +1,6 @@
 
   .main .banner {
-    background-position-x: 0px;
-    background-position-y: 0px;    	
+    background-position: 0px;    	
     background-size: cover;
     text-align: center;
     background-repeat: no-repeat;

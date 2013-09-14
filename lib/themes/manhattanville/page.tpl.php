@@ -1,19 +1,38 @@
 <div class="main">
-	
+
+  <?php // dpm($main_menu) ?>
+  <?php // dpm($secondary_menu) ?>
+  <?php // dpm() ?>
+  
   <div class="pure-g top">
-    <div class="pure-u-1-2">
-      <div class="pane left">
+    <div class="pure-u-1">
+      
+      <div class="pure-g columbia">
+        <div class="pure-u-1-2">
+          <div class="pane left"></div>
+        </div>
+        <div class="pure-u-1-2">
+          <div class="pane right">
+            <?php print render($manhattanville_search_widget) ?>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="pure-u-1-2">
-      <div class="pane right">
+      
+      <div class="pure-g brand">
+        <div class="pure-u">
+          <div class="pane site-logo">
+            <h1 class="element-invisible"><?php print $site_name ?></h1>
+          </div>
+        </div>
       </div>
+      
     </div>
   </div>
+  
+
+  
   <div class="pure-g banner">
-    <div class="pure-u-1">
-      <div class="l-box"></div>
-    </div>
+    <div class="pure-u-1"></div>
   </div>
   
   <div class="pure-g nav">

@@ -3,7 +3,28 @@
     height: 98px;
   }
 
-  .main .top .pane.right {
+  .main .top .right {
     position: relative;
 	float: right;
+  }
+  
+  .main .top .brand  {
+    position: relative;
+    bottom: -20px;
+    left: 20px;
+  }
+
+  .main .top .brand .site-logo {
+    background-image: url("http://localhost/manhattanville/sites/localhost.manhattanville/themes/manhattanville/img/logo.png");
+    background-position: 0px;
+    /** background-size: cover; */
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: transparent;
+    height: 34px;
+    width: 702px;
+    display: table;    
   }
