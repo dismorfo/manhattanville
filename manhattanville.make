@@ -5,13 +5,19 @@ api = 2
 projects[drupal][version] = "7.x"
 
 ; Modules
+projects[auto_nodetitle][version] = "1.0"
+
 projects[ctools][version] = "1.3"
 
 projects[devel][version] = "1.3"
 
 projects[diff][version] = "3.2"
 
+projects[features_extra][version] = "1.0-beta1"
+
 projects[features][version] = "2.0-rc3"
+
+projects[media][version] = "1.3"
 
 projects[footer_message][version] = "1.1"
 
@@ -30,6 +36,7 @@ projects[token][version] = "1.5"
 projects[views][version] = "3.7"
 
 ; Themes
+
 projects[rubik][version] = "4.0-beta9"
 
 projects[tao][version] = "3.0-beta4"
@@ -37,9 +44,14 @@ projects[tao][version] = "3.0-beta4"
 ; Others
 
 projects[manhattanville_features][download][type] = "get"
-projects[manhattanville_features][download][url] = "https://www.dropbox.com/s/hbolrkf7489g822/manhattanville_features.tar"
+projects[manhattanville_features][download][url] = "https://www.dropbox.com/s/8sty4c2v4akoeel/manhattanville_features.zip"
 projects[manhattanville_features][type] = "module"
+
+projects[block_manhattanville][download][type] = "get"
+projects[block_manhattanville][download][url] = "https://www.dropbox.com/s/d0kl1tjamxlddo9/block_manhattanville.zip"
+projects[block_manhattanville][type] = "module"
 
 projects[manhattanville][download][type] = "get"
 projects[manhattanville][download][url] = "https://www.dropbox.com/s/xzsjfaove6h8avh/manhattanville.zip"
 projects[manhattanville][type] = "theme"
+

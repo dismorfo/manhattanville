@@ -64,8 +64,8 @@ function block_manhattanville_contents($which_block) {
                           <input type="hidden" name="client" value="columbia">
                           <input type="hidden" name="site" value="Columbia">
                           <input type="hidden" name="output" value="xml_no_dtd">
-                          <input type="text" placeholder="Search" id="cu-search-box" maxlength="2033" value="" name="q">
-                          <input type="submit" id="edit-submit" name="op" value="Search" class="form-submit">
+                          <input id="cu-search-box" placeholder="' . t('Search for people, departments & websites') . '" type="text" maxlength="2033" value="" name="q" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+                          <button id="cu-search-submit" type="submit">' . t('Submit') . '</button>
                         </div>
                       </div>
                     </form>';

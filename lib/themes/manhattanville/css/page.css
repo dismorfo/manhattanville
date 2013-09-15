@@ -1,0 +1,52 @@
+.page .secondary {
+  max-width: 265px;
+  width: 265px;
+  margin-right: 25px;
+}
+
+.page .secondary .pure-menu {
+  font-size: 20px;
+}
+
+.page .secondary .pure-menu a {
+  text-transform: uppercase;
+  border: none;
+  text-align: right;
+}
+
+.page .secondary .pure-menu ul li {
+  list-style-image: none;
+  list-style-type: none;
+}
+
+.page .secondary .pure-menu.pure-menu-open, 
+.page .secondary .pure-menu.pure-menu-horizontal li .pure-menu-children {
+  background: transparent;
+  border: none;
+}
+
+
+.page .body {
+  padding-left: 60px;
+  border-left-color: #dfe8f2;
+  border-left-style: solid;
+  border-left-width: 1px;
+  margin-bottom: 2.5em;
+}
+  .page .body h2 {
+    text-transform: uppercase;
+    color: #163e75;
+    margin-top: 0;  
+  }
+
+.field-name-body .field-items .field-item :first-child {
+  margin-top: 0;
+}
+
+
+  .main .page .body {
+    max-width: 530px;
+    width: 530px;
+    color: #333333;
+    font-size: 16px;      
+  }

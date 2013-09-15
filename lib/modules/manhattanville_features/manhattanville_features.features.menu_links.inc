@@ -36,7 +36,7 @@ function manhattanville_features_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -49,
+    'weight' => -48,
   );
   // Exported menu link: main-menu:node/2
   $menu_links['main-menu:node/2'] = array(
@@ -50,7 +50,7 @@ function manhattanville_features_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -48,
+    'weight' => -47,
   );
   // Exported menu link: main-menu:node/3
   $menu_links['main-menu:node/3'] = array(
@@ -64,7 +64,7 @@ function manhattanville_features_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -47,
+    'weight' => -46,
   );
   // Exported menu link: main-menu:node/5
   $menu_links['main-menu:node/5'] = array(

@@ -1,12 +1,7 @@
 <div class="main">
-
-  <?php // dpm($main_menu) ?>
-  <?php // dpm($secondary_menu) ?>
   <?php // dpm() ?>
-  
   <div class="pure-g top">
     <div class="pure-u-1">
-      
       <div class="pure-g columbia">
         <div class="pure-u-1-2">
           <div class="pane left">
@@ -18,7 +13,6 @@
           </div>
         </div>
       </div>
-      
       <div class="pure-g brand">
         <div class="pure-u">
           <div class="pane site-logo">
@@ -26,16 +20,9 @@
           </div>
         </div>
       </div>
-      
     </div>
   </div>
-  
-
-  
-  <div class="pure-g banner">
-    <div class="pure-u-1"></div>
-  </div>
-  
+  <div class="banner"></div>
   <div class="pure-g nav">
     <div class="pure-u-1">
       <div class="pure-menu pure-menu-open pure-menu-horizontal">
@@ -43,7 +30,6 @@
       </div>
     </div>
   </div>
-  
   <div class="pure-g">
   	<div class="pure-u-1">
       <?php if ($tabs): ?>
@@ -63,21 +49,22 @@
       <?php endif; ?>
    </div>
   </div>
-
   <div class="pure-g page">
     <?php if (isset($active_menu_tree)) : ?>
-      <div class="pure-u-1-3">
-        <div class="secondary menu"><?php print render($active_menu_tree); ?></div>
+      <div class="pure-u secondary">
+        <div class="pure-menu pure-menu-open"><?php print render($active_menu_tree); ?></div>
      </div>
     <?php endif; ?>
-    <div class="pure-u-<?php print (isset($active_menu_tree)) ? '2-3' : '1' ?>">
-      <div id="content" class="clearfix">
+    <div class="pure-u body">
+      <div id="content">
         <div class="element-invisible"><a id="main-content"></a></div>
-          <?php print render($page['content']); ?>
-     </div>
+        <?php if (isset($trail_title)) : ?>
+          <h2 class="title"><?php print $trail_title ?></h2>
+        <?php endif; ?>
+        <?php print render($page['content']); ?>
+      </div>
+    </div>
   </div>
-
-
   <div class="pure-g footer">
   	<div class="pure-u-1">
       <div class="content">

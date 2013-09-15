@@ -5,9 +5,78 @@
 
   .main .top .right {
     position: relative;
-	float: right;
+    float: right;
+	right: 20px;
+	top: 10px;
   }
-  
+    .main .top .right form {
+      z-index: 5;
+      background-image: url('http://localhost/manhattanville/sites/localhost.manhattanville/themes/manhattanville/img/search_bg_bg.jpg');
+      font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+      font-size: 11px;
+      color: #000;
+    }
+    
+      .main .top .right form ::-webkit-input-placeholder { /* WebKit browsers */
+        color: #000;
+      }
+    
+      .main .top .right form :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: #000;
+      }
+    
+      .main .top .right form ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: #000;
+      }
+    
+      .main .top .right form :-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: #000;
+      }
+    
+      .main .top .right form .wrapper {
+        position: relative;
+        background: url('http://localhost/manhattanville/sites/localhost.manhattanville/themes/manhattanville/img/search_bg_left.jpg') no-repeat 0 0;
+      }
+      
+      .main .top .right form .wrapper .wrapper-inner {
+        background: url('http://localhost/manhattanville/sites/localhost.manhattanville/themes/manhattanville/img/search_bg_right.jpg') no-repeat right top;
+      }
+      
+      .main .top .right form .wrapper .wrapper-inner .searchbox {
+        position:absolute; 
+        left:-10000px; 
+        top:auto; 
+        width:1px; 
+        height:1px; 
+        overflow:hidden;
+      }
+      
+      .main .top .right form .wrapper .wrapper-inner #cu-search-box {
+        background: none;
+        width: 220px;
+        padding: 4px 30px 7px 10px;
+        border: none;
+        display: inline;
+        margin: 0 0 0.5em;
+        font-size: 1em;      
+      }
+      
+      .main .top .right form .wrapper .wrapper-inner button {
+        position: absolute;
+        right: 12px;
+        top: 4px;
+        z-index: 2;
+        width: 13px;
+        height: 13px;
+        border: none;
+        background: url('http://localhost/manhattanville/sites/localhost.manhattanville/themes/manhattanville/img/sprites1.png') -51px -42px no-repeat;
+        cursor: pointer;
+        text-indent: -4000px;
+        overflow: hidden;
+        display: block;
+        padding: 0;
+      }
+    
   .main .top .left {
     position: relative;
 	left: 20px;

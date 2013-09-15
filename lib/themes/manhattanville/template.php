@@ -12,27 +12,23 @@ function manhattanville_preprocess_page(&$vars) {
     'preprocess' => FALSE,
     'weight' => '9999',
   );
+  
+  $file_uri = base_path() . path_to_theme() . '/img/default.png';
 
   if (isset($vars['node']) && $vars['node']->type == 'page') {
-  	  
-    $banner = manhattanville_field_get_first_item('node', $vars['node'], 'field_banner', 0, $vars['node']->language);
-
-    drupal_add_css('.banner {background-image: url("' . file_create_url($banner['uri']) . '");}', $cssConf);
-
+    if ($banner = manhattanville_field_get_first_item('node', $vars['node'], 'field_banner', 0, $vars['node']->language)) {;
+      $file_uri = file_create_url($banner['uri']);
+	}
   }
   else {
-
-  	$fid = theme_get_setting('manhattanville_banner');
-	$file_uri = base_path() . path_to_theme() . '/default.png';
-
-	if ($fid) {
-	  $file = file_load($fid);
-	  $file_uri = file_create_url($file->uri);
+	if ($fid = theme_get_setting('manhattanville_banner')) {
+	  if ($file = file_load($fid) && !empty($file)) {
+	    $file_uri = file_create_url($file->uri);
+	  }
 	}
-
-  	drupal_add_css('.banner {background-image: url("' . $file_uri . '");}', $cssConf);
-
   }
+  
+  drupal_add_css('.banner {background-image: url("' . $file_uri . '");}', $cssConf);
   
   $footer_message = module_invoke('footer_message', 'block_view', 'footer_message');
   
@@ -49,9 +45,10 @@ function manhattanville_preprocess_page(&$vars) {
   $vars['main_menu_tree'] = menu_tree_output($main_menu_tree);
   
   $vars['footer_menu_tree'] = menu_tree_output($footer_menu_tree);
-
+  
   foreach ($main_menu_tree as $key => $m) {
     if ($m['link']['in_active_trail'] && $main_menu_tree[$key]['below']) {
+	  $vars['trail_title'] = $vars['node']->title;
       $vars['active_menu_tree'] = menu_tree_output($main_menu_tree[$key]['below']);
     }  
   }
