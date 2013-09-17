@@ -18,6 +18,11 @@
       margin: auto 0;
       color: #fff;
     }
+    
+    .main .nav .pure-menu ul {
+      text-align: center;
+      width: 100%;
+    }
 
     .main .nav .pure-menu.pure-menu-open, 
     .main .nav .pure-menu.pure-menu-horizontal li .pure-menu-children {

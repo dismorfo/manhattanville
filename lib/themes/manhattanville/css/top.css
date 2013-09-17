@@ -11,7 +11,7 @@
   }
     .main .top .right form {
       z-index: 5;
-      background-image: url('http://localhost/manhattanville/sites/localhost.manhattanville/themes/manhattanville/img/search_bg_bg.jpg');
+      background-image: url('../img/search_bg_bg.jpg');
       font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
       font-size: 11px;
       color: #000;
@@ -35,11 +35,11 @@
     
       .main .top .right form .wrapper {
         position: relative;
-        background: url('http://localhost/manhattanville/sites/localhost.manhattanville/themes/manhattanville/img/search_bg_left.jpg') no-repeat 0 0;
+        background: url('../img/search_bg_left.jpg') no-repeat 0 0;
       }
       
       .main .top .right form .wrapper .wrapper-inner {
-        background: url('http://localhost/manhattanville/sites/localhost.manhattanville/themes/manhattanville/img/search_bg_right.jpg') no-repeat right top;
+        background: url('../img/search_bg_right.jpg') no-repeat right top;
       }
       
       .main .top .right form .wrapper .wrapper-inner .searchbox {
@@ -69,7 +69,7 @@
         width: 13px;
         height: 13px;
         border: none;
-        background: url('http://localhost/manhattanville/sites/localhost.manhattanville/themes/manhattanville/img/sprites1.png') -51px -42px no-repeat;
+        background: url('../img/sprites1.png') -51px -42px no-repeat;
         cursor: pointer;
         text-indent: -4000px;
         overflow: hidden;
@@ -77,34 +77,34 @@
         padding: 0;
       }
     
-  .main .top .left {
-    position: relative;
-	left: 20px;
-	top: 10px;
-  }
-  
-  .main .top .brand  {
-    position: relative;
-    bottom: -20px;
-    left: 20px;
-  }
+      .main .top .left {
+        position: relative;
+	    left: 20px;
+        top: 10px;
+      }
 
-  .main .top .brand .site-logo {
-    background-image: url("http://localhost/manhattanville/sites/localhost.manhattanville/themes/manhattanville/img/logo.png");
-    background-position: 0px;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: transparent;
-    height: 34px;
-    width: 702px;
-    display: table;
-  }
+      .main .top .brand  {
+        position: relative;
+        bottom: -20px;
+        left: 20px;
+      }
+
+      .main .top .brand .site-logo {
+        background-image: url("../img/logo.png");
+        background-position: 0px;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: transparent;
+        height: 34px;
+        width: 702px;
+        display: table;
+      }
   
   .main .top .columbia .left {
-    background-image: url("http://localhost/manhattanville/sites/localhost.manhattanville/themes/manhattanville/img/columbia.png");
+    background-image: url("../img/columbia.png");
     background-position: 0px;
     text-align: center;
     background-repeat: no-repeat;
