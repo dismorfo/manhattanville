@@ -43,15 +43,15 @@ projects[tao][version] = "3.0-beta4"
 
 ; Others
 
-projects[manhattanville_features][download][type] = "get"
-projects[manhattanville_features][download][url] = "https://www.dropbox.com/s/8sty4c2v4akoeel/manhattanville_features.zip"
-projects[manhattanville_features][type] = "module"
+ projects[manhattanville_features][download][type] = "local"
+ projects[manhattanville_features][download][source] = lib/modules/manhattanville_features
+ projects[manhattanville_features][type] = "module"
 
-projects[block_manhattanville][download][type] = "get"
-projects[block_manhattanville][download][url] = "https://www.dropbox.com/s/d0kl1tjamxlddo9/block_manhattanville.zip"
-projects[block_manhattanville][type] = "module"
+ projects[block_manhattanville][download][type] = "local"
+ projects[block_manhattanville][download][source] = lib/modules/block_manhattanville
+ projects[block_manhattanville][type] = "module"
 
-projects[manhattanville][download][type] = "get"
-projects[manhattanville][download][url] = "https://www.dropbox.com/s/xzsjfaove6h8avh/manhattanville.zip"
-projects[manhattanville][type] = "theme"
+ projects[manhattanville][download][type] = "local"
+ projects[manhattanville][download][source] = lib/themes/manhattanville
+ projects[manhattanville][type] = "theme"
 
