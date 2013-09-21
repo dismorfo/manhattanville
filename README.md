@@ -14,8 +14,22 @@ Build the drupal distribution, e.g.
 
 	drush make --prepare-install -tar manhattanville.make builds/mville--$(date +"%Y_%m_%d_%H_%M_%S")
 
+...or,
 
-# Running the site
+	drush make --prepare-install manhattanville.make builds/manhattanville
 
-TBD
+
+# Installing the site
+
+Get your webserver running and pointed at the root directory of the distribution, e.g.
+
+	builds/manhattanville
+
+Edit the database connection settings in sites/default/settings.php.
+
+Now run the installation process using the distributed profile
+
+	drush site-install manhattanville-profile
+
+Visit the site 
 

@@ -4,6 +4,13 @@ core = 7.x
 api = 2
 projects[drupal][version] = "7.x"
 
+; Profile
+projects[manhattanville_profile][type] = "profile"
+
+projects[manhattanville_profile][download][type] = "local"
+
+projects[manhattanville_profile][download][source] = lib/profiles/manhattanville_profile
+
 ; Modules
 projects[auto_nodetitle][version] = "1.0"
 
