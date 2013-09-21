@@ -1,0 +1,11 @@
+<?php
+/**
+ * Implement hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ */
+function manhattanville__profile_install() {
+//  include_once DRUPAL_ROOT . '/profiles/standard/standard.install';
+//  standard_install();
+  $default_theme = variable_get('theme_default', 'manhattanville');
+}
