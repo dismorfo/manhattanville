@@ -42,6 +42,8 @@ projects[token][version] = "1.5"
 
 projects[views][version] = "3.7"
 
+projects[webform][version] = "3.19"
+
 ; Themes
 
 projects[rubik][version] = "4.0-beta9"

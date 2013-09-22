@@ -1,0 +1,113 @@
+.view-design-team .views-label {
+  position:absolute; 
+  left:-10000px; 
+  top:auto; 
+  width:1px; 
+  height:1px; 
+  overflow:hidden;
+}
+
+.view-design-team tr {
+  vertical-align: top;
+}
+
+.view-design-team .views-field-field-name {
+  text-align: center;
+}
+
+.view-design-team .views-field-field-name a {
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid #163e75;
+  padding-bottom: 1px;
+}
+
+.view-design-team .views-field-field-name a:hover,
+.view-design-team .views-field-field-name a:focus,
+.view-design-team .views-field-field-name a:hover {
+  border-bottom: 1px solid red;
+  color: red;
+}
+
+.view-design-team .views-field-field-name .field-content {
+  margin-top: .3em;
+}
+
+.view-design-team .views-field-field-name-1 {
+  margin-top: .5em;
+  text-align: center;
+}
+
+.view-design-team .views-field-field-organization {
+  text-align: center;
+}
+
+.view-design-team .views-field-field-photo {
+  text-align: center;
+}
+
+.view-design-team img {
+  width: 148px;
+  height: 148px;
+  border: 2px solid #163e75;
+  vertical-align: top;
+}
+
+.view-columbia-project-team {
+
+}
+
+.view-columbia-project-team tr {
+  vertical-align: top;
+}
+
+.view-columbia-project-team .views-field-field-name {
+  text-align: center;
+}
+
+.view-columbia-project-team .views-label {
+  position:absolute; 
+  left:-10000px; 
+  top:auto; 
+  width:1px; 
+  height:1px; 
+  overflow:hidden;	
+}
+
+.view-columbia-project-team .views-field-field-name a {
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid #163e75;
+  padding-bottom: 1px;
+}
+
+.view-columbia-project-team .views-field-field-name a:hover,
+.view-columbia-project-team .views-field-field-name a:focus,
+.view-columbia-project-team .views-field-field-name a:hover {
+  border-bottom: 1px solid red;
+  color: red;
+}
+
+.view-columbia-project-team  .views-field-field-name .field-content {
+  margin-top: .3em;
+}
+
+.view-columbia-project-team  .views-field-field-name-1 {
+  margin-top: .5em;
+  text-align: center;
+}
+
+.view-columbia-project-team  .views-field-field-organization {
+  text-align: center;
+}
+
+.view-columbia-project-team .views-field-field-photo {
+  text-align: center;
+}
+
+.view-columbia-project-team  img {
+  width: 148px;
+  height: 148px;
+  border: 2px solid #163e75;
+  vertical-align: top;
+}

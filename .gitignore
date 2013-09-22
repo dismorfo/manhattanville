@@ -40,3 +40,4 @@ xmlrpc.php
 .DS_Store
 .project
 settings.php
+/builds

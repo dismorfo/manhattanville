@@ -19,6 +19,10 @@
   list-style-type: none;
 }
 
+.page .secondary .pure-menu ul li a {
+ 
+}
+
 .page .secondary .pure-menu.pure-menu-open, 
 .page .secondary .pure-menu.pure-menu-horizontal li .pure-menu-children {
   background: transparent;
