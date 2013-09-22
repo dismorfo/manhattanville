@@ -503,11 +503,11 @@ function manhattanville_features_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
-        'module' => 'taxonomy',
+        'label' => 'above',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 4,
+        'type' => 'list_default',
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -519,16 +519,15 @@ function manhattanville_features_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_team',
     'label' => 'Team',
-    'required' => 1,
+    'required' => FALSE,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 1,
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 34,
+      'weight' => 36,
     ),
   );
 

@@ -64,14 +64,12 @@ function manhattanville_features_views_default_views() {
     'team' => 'team',
   );
   /* Filter criterion: Content: Team (field_team) */
-  $handler->display->display_options['filters']['field_team_tid']['id'] = 'field_team_tid';
-  $handler->display->display_options['filters']['field_team_tid']['table'] = 'field_data_field_team';
-  $handler->display->display_options['filters']['field_team_tid']['field'] = 'field_team_tid';
-  $handler->display->display_options['filters']['field_team_tid']['value'] = array(
-    3 => '3',
+  $handler->display->display_options['filters']['field_team_value']['id'] = 'field_team_value';
+  $handler->display->display_options['filters']['field_team_value']['table'] = 'field_data_field_team';
+  $handler->display->display_options['filters']['field_team_value']['field'] = 'field_team_value';
+  $handler->display->display_options['filters']['field_team_value']['value'] = array(
+    'Columbia Project Team' => 'Columbia Project Team',
   );
-  $handler->display->display_options['filters']['field_team_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_team_tid']['vocabulary'] = 'teams';
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
@@ -131,14 +129,12 @@ function manhattanville_features_views_default_views() {
     'team' => 'team',
   );
   /* Filter criterion: Content: Team (field_team) */
-  $handler->display->display_options['filters']['field_team_tid']['id'] = 'field_team_tid';
-  $handler->display->display_options['filters']['field_team_tid']['table'] = 'field_data_field_team';
-  $handler->display->display_options['filters']['field_team_tid']['field'] = 'field_team_tid';
-  $handler->display->display_options['filters']['field_team_tid']['value'] = array(
-    4 => '4',
+  $handler->display->display_options['filters']['field_team_value']['id'] = 'field_team_value';
+  $handler->display->display_options['filters']['field_team_value']['table'] = 'field_data_field_team';
+  $handler->display->display_options['filters']['field_team_value']['field'] = 'field_team_value';
+  $handler->display->display_options['filters']['field_team_value']['value'] = array(
+    'Design Team' => 'Design Team',
   );
-  $handler->display->display_options['filters']['field_team_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_team_tid']['vocabulary'] = 'teams';
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
