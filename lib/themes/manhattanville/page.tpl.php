@@ -1,5 +1,4 @@
 <div class="main">
-  <?php // dpm() ?>
   <div class="pure-g top">
     <div class="pure-u-1">
       <div class="pure-g columbia">
@@ -50,11 +49,11 @@
    </div>
   </div>
   <div class="pure-g page">
+  	<div class="pure-u secondary">
     <?php if (isset($active_menu_tree)) : ?>
-      <div class="pure-u secondary">
-        <div class="pure-menu pure-menu-open"><?php print render($active_menu_tree); ?></div>
-     </div>
+      <div class="pure-menu pure-menu-open"><?php print render($active_menu_tree); ?></div>
     <?php endif; ?>
+    </div>
     <div class="pure-u body">
       <div id="content">
         <div class="element-invisible"><a id="main-content"></a></div>
@@ -76,5 +75,4 @@
       </div>  
     </div>
   </div>
-  
 </div>

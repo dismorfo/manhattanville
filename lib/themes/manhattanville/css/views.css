@@ -111,3 +111,25 @@
   border: 2px solid #163e75;
   vertical-align: top;
 }
+
+
+#block-views-stories-block h2 {
+  position:absolute; 
+  left:-10000px; 
+  top:auto; 
+  width:1px; 
+  height:1px; 
+  overflow:hidden;	
+}
+
+#block-views-stories-block .views-field-title {
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: .1em;
+  font-size: 1em;
+}
+
+#block-views-stories-block .field-content :first-child {
+  margin-top: 0;
+}
