@@ -29,6 +29,7 @@ function manhattanville_features_image_default_styles() {
   // Exported image style: small-photo.
   $styles['small-photo'] = array(
     'name' => 'small-photo',
+    'label' => 'small-photo',
     'effects' => array(
       1 => array(
         'label' => 'Scale and crop',
@@ -40,8 +41,8 @@ function manhattanville_features_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 80,
-          'height' => 80,
+          'width' => 150,
+          'height' => 150,
         ),
         'weight' => 1,
       ),
@@ -92,6 +93,14 @@ function manhattanville_features_node_info() {
       'name' => t('Team member'),
       'base' => 'node_content',
       'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+    'webform' => array(
+      'name' => t('Webform'),
+      'base' => 'node_content',
+      'description' => t('Create a new form or questionnaire accessible to users. Submission results and statistics are recorded and accessible to privileged users.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

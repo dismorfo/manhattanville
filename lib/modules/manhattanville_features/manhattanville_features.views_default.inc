@@ -29,21 +29,38 @@ function manhattanville_features_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'node';
+  $handler->display->display_options['style_plugin'] = 'grid';
+  $handler->display->display_options['style_options']['columns'] = '3';
+  $handler->display->display_options['row_plugin'] = 'fields';
   /* Header: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['content'] = 'Duis venenatis placerat risus in fringilla. Suspendisse tempor ante eget erat venenatis, ac rutrum ipsum sagittis. Etiam viverra convallis rhoncus. Aenean a sem vestibulum, commodo dolor ut, lobortis massa. Maecenas at vestibulum metus, non feugiat nisl. Fusce dignissim eget tellus sit amet varius. Proin porta pulvinar venenatis. Aliquam dignissim felis sit amet enim porttitor vehicula. Pellentesque in nisi odio. Maece- nas in sapien felis. Nam interdum consequat sagittis. Nunc porttitor hendrerit purus, eu eleifend dolor sceler- isque ut. Proin viverra dolor erat.';
   $handler->display->display_options['header']['area']['format'] = 'filtered_html';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Photo */
+  $handler->display->display_options['fields']['field_photo']['id'] = 'field_photo';
+  $handler->display->display_options['fields']['field_photo']['table'] = 'field_data_field_photo';
+  $handler->display->display_options['fields']['field_photo']['field'] = 'field_photo';
+  $handler->display->display_options['fields']['field_photo']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_photo']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
+  /* Field: Content: Name */
+  $handler->display->display_options['fields']['field_name']['id'] = 'field_name';
+  $handler->display->display_options['fields']['field_name']['table'] = 'field_data_field_name';
+  $handler->display->display_options['fields']['field_name']['field'] = 'field_name';
+  $handler->display->display_options['fields']['field_name']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_name']['alter']['path'] = '#[field_name]';
+  /* Field: Content: Name */
+  $handler->display->display_options['fields']['field_name_1']['id'] = 'field_name_1';
+  $handler->display->display_options['fields']['field_name_1']['table'] = 'field_data_field_name';
+  $handler->display->display_options['fields']['field_name_1']['field'] = 'field_name';
+  /* Field: Content: Organization */
+  $handler->display->display_options['fields']['field_organization']['id'] = 'field_organization';
+  $handler->display->display_options['fields']['field_organization']['table'] = 'field_data_field_organization';
+  $handler->display->display_options['fields']['field_organization']['field'] = 'field_organization';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -96,21 +113,38 @@ function manhattanville_features_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'node';
+  $handler->display->display_options['style_plugin'] = 'grid';
+  $handler->display->display_options['style_options']['columns'] = '3';
+  $handler->display->display_options['row_plugin'] = 'fields';
   /* Header: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['content'] = 'Duis venenatis placerat risus in fringilla. Suspendisse tempor ante eget erat venenatis, ac rutrum ipsum sagittis. Etiam viverra convallis rhoncus. Aenean a sem vestibulum, commodo dolor ut, lobortis massa. Maecenas at vestibulum metus, non feugiat nisl. Fusce dignissim eget tellus sit amet varius. Proin porta pulvinar venenatis. Aliquam dignissim felis sit amet enim porttitor vehicula. Pellentesque in nisi odio. Maece- nas in sapien felis. Nam interdum consequat sagittis. Nunc porttitor hendrerit purus, eu eleifend dolor sceler- isque ut. Proin viverra dolor erat.';
   $handler->display->display_options['header']['area']['format'] = 'filtered_html';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Photo */
+  $handler->display->display_options['fields']['field_photo']['id'] = 'field_photo';
+  $handler->display->display_options['fields']['field_photo']['table'] = 'field_data_field_photo';
+  $handler->display->display_options['fields']['field_photo']['field'] = 'field_photo';
+  $handler->display->display_options['fields']['field_photo']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_photo']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
+  /* Field: Content: Name */
+  $handler->display->display_options['fields']['field_name']['id'] = 'field_name';
+  $handler->display->display_options['fields']['field_name']['table'] = 'field_data_field_name';
+  $handler->display->display_options['fields']['field_name']['field'] = 'field_name';
+  $handler->display->display_options['fields']['field_name']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_name']['alter']['path'] = '#[field_name-value]';
+  /* Field: Content: Name */
+  $handler->display->display_options['fields']['field_name_1']['id'] = 'field_name_1';
+  $handler->display->display_options['fields']['field_name_1']['table'] = 'field_data_field_name';
+  $handler->display->display_options['fields']['field_name_1']['field'] = 'field_name';
+  /* Field: Content: Organization */
+  $handler->display->display_options['fields']['field_organization']['id'] = 'field_organization';
+  $handler->display->display_options['fields']['field_organization']['table'] = 'field_data_field_organization';
+  $handler->display->display_options['fields']['field_organization']['field'] = 'field_organization';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';

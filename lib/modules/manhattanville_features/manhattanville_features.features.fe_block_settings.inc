@@ -27,12 +27,6 @@ function manhattanville_features_default_fe_block_settings() {
         'theme' => 'bartik',
         'weight' => 0,
       ),
-      'bootstrap' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bootstrap',
-        'weight' => 0,
-      ),
       'manhattanville' => array(
         'region' => '',
         'status' => 0,
@@ -63,12 +57,6 @@ function manhattanville_features_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'bartik',
-        'weight' => 0,
-      ),
-      'bootstrap' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bootstrap',
         'weight' => 0,
       ),
       'manhattanville' => array(
@@ -103,12 +91,6 @@ function manhattanville_features_default_fe_block_settings() {
         'theme' => 'bartik',
         'weight' => 0,
       ),
-      'bootstrap' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bootstrap',
-        'weight' => 0,
-      ),
       'manhattanville' => array(
         'region' => '',
         'status' => 0,
@@ -141,12 +123,6 @@ function manhattanville_features_default_fe_block_settings() {
         'theme' => 'bartik',
         'weight' => 0,
       ),
-      'bootstrap' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bootstrap',
-        'weight' => 0,
-      ),
       'manhattanville' => array(
         'region' => 'content',
         'status' => 1,
@@ -177,12 +153,6 @@ function manhattanville_features_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'bartik',
-        'weight' => 0,
-      ),
-      'bootstrap' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bootstrap',
         'weight' => 0,
       ),
       'manhattanville' => array(
