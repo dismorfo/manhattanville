@@ -5,8 +5,6 @@
  * Perform actions to set up the site for this profile.
  */
 function manhattanville_profile_install() {
-//  include_once DRUPAL_ROOT . '/profiles/standard/standard.install';
-//  standard_install();
   $default_theme = variable_get('theme_default', 'manhattanville');
 }
 
@@ -18,11 +16,19 @@ function manhattanville_profile_install_tasks() {
                                 'function' => 'mville_site_content',
                                 );
 
+  $tasks['user_permissions'] = array(
+                                   'display_name' => st('Setup permissions'),
+                                   'function' => 'mville_permissions',
+                                     );
+
   return $tasks;
 }
 
 
-                                   
+function mville_permissions() {
+  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content'));
+                              user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content'));
+}
 
 
 function mville_site_content() {
