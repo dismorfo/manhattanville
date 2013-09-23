@@ -161,7 +161,7 @@ function mville_site_content() {
 
   $item = array(
                 'link_title' => st('Home'),
-                'link_path' => '<front>',
+                'link_path' => $node_map['Home'],
                 'menu_name' => 'main-menu',
                 'weight' => 0,
                  );
@@ -234,5 +234,8 @@ function mville_site_content() {
                 );
 
   menu_link_save($item);
+
+  // Set the Home page
+  variable_set('site_frontpage', $node_map['Home']);
  
 }
