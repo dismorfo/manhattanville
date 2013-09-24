@@ -134,7 +134,6 @@ features[variable][] = pathauto_punctuation_hyphen
 features[variable][] = pathauto_taxonomy_term_pattern
 features[variable][] = pathauto_taxonomy_term_tags_pattern
 features[variable][] = pathauto_user_pattern
-features[variable][] = site_frontpage
 features[variable][] = site_name
 features[variable][] = theme_default
 features[variable][] = theme_manhattanville_settings
