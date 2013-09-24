@@ -2,29 +2,79 @@
     background-color: #163e75;
     height: 130px;
   }
-  
+
   .main .footer .content {
     color: #fff;
     width: 100%;
-    text-align: center; 
+    text-align: center;
   }
-  
+
   .main .footer .pure-menu ul {
   }
-  
+
   .main .footer .pure-menu a {
   	color: #fff;
   	font-size: 13px;
   	font-weight: 500;
   	text-transform: uppercase;
   }
-  
-  .main .footer .pure-menu.pure-menu-open, 
+
+  .main .footer .pure-menu.pure-menu-open,
   .main .footer .pure-menu.pure-menu-horizontal li .pure-menu-children {
     background-color: #163e75;
   }
-    
-  .main .footer .pure-menu li a:hover, 
+
+  .main .footer .pure-menu li a:hover,
   .main .footer .pure-menu li a:focus {
     background: inherit;
   }
+
+  #service-links {
+    float: right;
+    margin: 0 0.45em 0.5em 0;
+    padding: 0 1em 0em 0;
+    position: relative;
+    top: -10px;
+  }
+
+  /*
+     Copied from
+     http://www.columbia.edu/sites/all/themes/base/columbia2/columbia2-theme.css
+  */
+#service-links li {
+  float: left;
+  list-style: none;
+  list-style-image: none;
+}
+
+#service-links li a {
+  background: url('http://www.columbia.edu/sites/all/themes/base/columbia2/images/footericons.png') no-repeat;
+  display: block;
+  margin-right: 5px;
+  text-indent: -5000px;
+  width: 19px;
+  height: 18px;
+}
+
+#service-links li.twitter a {
+  background: url('http://www.columbia.edu/sites/all/themes/ias/cu2/images/link-tw.png') no-repeat;
+  width: 17px;
+}
+
+#service-links li.itunes a {
+  background-position: -21px 0;
+  width: 20px;
+}
+#service-links li.rss a {
+  background-position: -43px 0;
+  width: 20px;
+}
+#service-links li.youtube a {
+  background-position: -65px 0;
+  width: 45px;
+  margin-right: 0;
+}
+#service-links li.gplus a {
+  background-position: -129px 0;
+  width: 17px;
+}

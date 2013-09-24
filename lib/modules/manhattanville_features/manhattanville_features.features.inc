@@ -58,7 +58,7 @@ function manhattanville_features_image_default_styles() {
 function manhattanville_features_node_info() {
   $items = array(
     'construction_updates' => array(
-      'name' => t('Construction Updates'),
+      'name' => t('Construction Update'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
