@@ -5,25 +5,46 @@
  * Perform actions to set up the site for this profile.
  */
 function manhattanville_profile_install() {
-  $default_theme = variable_get('theme_default', 'manhattanville');
+
 }
 
 
 function manhattanville_profile_install_tasks() {
 
+  $tasks['enable_themes'] = array(
+    'display_name' => st('Enable Themes'),
+    'function' => 'mville_themes',
+  );
+
   $tasks['load_content'] = array(
-                                'display_name' => st('Install Site Content'),
-                                'function' => 'mville_site_content',
-                                );
+    'display_name' => st('Install Site Content'),
+    'function' => 'mville_site_content',
+  );
 
   $tasks['user_permissions'] = array(
-                                   'display_name' => st('Setup permissions'),
-                                   'function' => 'mville_permissions',
-                                     );
+    'display_name' => st('Setup permissions'),
+    'function' => 'mville_permissions',
+  );
 
   return $tasks;
 }
 
+function mville_themes() {
+  $enable = array(
+    'theme_default' => 'manhattanville',
+    'admin_theme' => 'rubik',
+  );
+
+  theme_enable($enable);
+
+  foreach ($enable as $var => $theme) {
+    if (!is_numeric($var)) {
+      variable_set($var, $theme);
+    }
+  }
+
+  theme_disable(array('bartik'));
+}
 
 function mville_permissions() {
   user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content'));
@@ -198,7 +219,7 @@ function mville_site_content() {
                 'weight' => 4,
                 );
   $menu_ids['Community'] = menu_link_save($item);
-  
+
   $item = array(
                 'link_title' => st('Stories'),
                 'link_path' => $node_map['Stories'],
@@ -237,5 +258,5 @@ function mville_site_content() {
 
   // Set the Home page
   variable_set('site_frontpage', $node_map['Home']);
- 
+
 }
