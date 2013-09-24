@@ -21,10 +21,10 @@ function manhattanville_features_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'bartik' => array(
+      'rubik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'bartik',
+        'theme' => 'rubik',
         'weight' => 0,
       ),
       'manhattanville' => array(
@@ -47,10 +47,10 @@ function manhattanville_features_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'bartik' => array(
+      'rubik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'bartik',
+        'theme' => 'rubik',
         'weight' => 0,
       ),
       'manhattanville' => array(
@@ -73,10 +73,10 @@ function manhattanville_features_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'bartik' => array(
+      'rubik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'bartik',
+        'theme' => 'rubik',
         'weight' => 0,
       ),
       'manhattanville' => array(
@@ -99,10 +99,10 @@ function manhattanville_features_default_fe_block_settings() {
     'pages' => 'team',
     'roles' => array(),
     'themes' => array(
-      'bartik' => array(
+      'rubik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'bartik',
+        'theme' => 'rubik',
         'weight' => 0,
       ),
       'manhattanville' => array(
@@ -125,10 +125,10 @@ function manhattanville_features_default_fe_block_settings() {
     'pages' => 'construction',
     'roles' => array(),
     'themes' => array(
-      'bartik' => array(
+      'rubik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'bartik',
+        'theme' => 'rubik',
         'weight' => 0,
       ),
       'manhattanville' => array(
@@ -151,10 +151,10 @@ function manhattanville_features_default_fe_block_settings() {
     'pages' => 'team',
     'roles' => array(),
     'themes' => array(
-      'bartik' => array(
+      'rubik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'bartik',
+        'theme' => 'rubik',
         'weight' => 0,
       ),
       'manhattanville' => array(
@@ -177,10 +177,10 @@ function manhattanville_features_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'bartik' => array(
+      'rubik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'bartik',
+        'theme' => 'rubik',
         'weight' => 0,
       ),
       'manhattanville' => array(
@@ -203,10 +203,10 @@ function manhattanville_features_default_fe_block_settings() {
     'pages' => 'construction',
     'roles' => array(),
     'themes' => array(
-      'bartik' => array(
+      'rubik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'bartik',
+        'theme' => 'rubik',
         'weight' => 0,
       ),
       'manhattanville' => array(
