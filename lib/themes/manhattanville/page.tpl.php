@@ -32,9 +32,9 @@
   <div class="pure-g">
   	<div class="pure-u-1">
       <?php if ($tabs): ?>
-          <?php print render($tabs); ?>    
+          <?php print render($tabs); ?>
       <?php endif; ?>
-      <?php print render($primary_local_tasks); ?>  		
+      <?php print render($primary_local_tasks); ?>
       <?php if ($messages): ?>
         <div id="console" class="clearfix"><?php print $messages; ?></div>
       <?php endif; ?>
@@ -78,8 +78,8 @@
       	  <?php print render($footer_menu_tree); ?>
       	</div>
       	<?php print render($footer_message); ?>
-        <?php print $feed_icons; ?>
-      </div>  
+   <?php print render($social_media_links); ?>
+      </div>
     </div>
   </div>
 </div>

@@ -26,6 +26,11 @@ function block_manhattanville_block_info() {
     'cache' => DRUPAL_CACHE_PER_ROLE, // default
   );
 
+  $blocks['mville_social_media_links'] = array(
+    'info' => t('Social Media Links'),
+  );
+
+
   return $blocks;
 }
 
@@ -46,6 +51,11 @@ function block_manhattanville_block_view($delta = '') {
       // function.
       $block['content'] = block_manhattanville_contents($delta);
       break;
+
+    case 'mville_social_media_links':
+      $block['content'] = block_manhattanville_contents($delta);
+      break;
+
   }
   return $block;
 }
@@ -56,7 +66,6 @@ function block_manhattanville_block_view($delta = '') {
 function block_manhattanville_contents($which_block) {
   switch ($which_block) {
     case 'manhattanville_search_widget':
-      
      $block_form = '<form id="cu-search" action="http://search.columbia.edu/search" method="get">
                       <div class="wrapper">
                         <div class="wrapper-inner">
@@ -69,7 +78,21 @@ function block_manhattanville_contents($which_block) {
                         </div>
                       </div>
                     </form>';
-      
+
       return array('#markup' => $block_form);
+      break;
+
+    case 'mville_social_media_links':
+      $links = '<ul id="service-links">
+      <li class="facebook"><a href="http://www.facebook.com/columbia">Facebook</a></li>
+      <li class="twitter"><a href="http://www.twitter.com/columbia">Twitter</a></li>
+      <li class="gplus"><a href="https://plus.google.com/109017232134596716836">Google+</a></li>
+      <li class="itunes"><a href="http://itunes.columbia.edu/m/">iTunes</a></li>
+      <li class="rss"><a href="http://news.columbia.edu/rss-how-to">RSS</a></li>
+      <li class="youtube"><a href="http://www.youtube.com/ColumbiaUniversity">YouTube</a></li>
+    </ul>';
+
+      return array('#markup' => $links);
+      break;
   }
 }
