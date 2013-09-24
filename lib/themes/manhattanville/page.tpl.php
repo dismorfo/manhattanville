@@ -64,7 +64,7 @@
       </div>
     </div>
    <?php if ($page['sidebar_first']) : ?>
-	   	<div class="pure-u">
+	   	<div class="pure-u sidebar-right">
    			<?php print render($page['sidebar_first']); ?>
  			</div>
    <?php endif; ?>
