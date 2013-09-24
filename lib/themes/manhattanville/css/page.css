@@ -20,10 +20,10 @@
 }
 
 .page .secondary .pure-menu ul li a {
- 
+
 }
 
-.page .secondary .pure-menu.pure-menu-open, 
+.page .secondary .pure-menu.pure-menu-open,
 .page .secondary .pure-menu.pure-menu-horizontal li .pure-menu-children {
   background: transparent;
   border: none;
@@ -40,7 +40,7 @@
   .page .body h2q {
     text-transform: uppercase;
     color: #163e75;
-    margin-top: 0;  
+    margin-top: 0;
   }
 
 .field-name-body .field-items .field-item :first-child {
@@ -52,5 +52,13 @@
     max-width: 530px;
     width: 530px;
     color: #333333;
-    font-size: 16px;      
+    font-size: 16px;
   }
+
+.page .sidebar-right {
+	background-color: #CFD9DA;
+  padding: 20px;
+  margin-left: 40px;
+  border-radius: 10px;
+  width: 250px;
+}

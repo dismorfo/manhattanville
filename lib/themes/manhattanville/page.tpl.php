@@ -32,9 +32,9 @@
   <div class="pure-g">
   	<div class="pure-u-1">
       <?php if ($tabs): ?>
-          <?php print render($tabs); ?>    
-      <?php endif; ?>  		
-      <?php print render($primary_local_tasks); ?>  		
+          <?php print render($tabs); ?>
+      <?php endif; ?>
+      <?php print render($primary_local_tasks); ?>
       <?php if ($messages): ?>
         <div id="console" class="clearfix"><?php print $messages; ?></div>
       <?php endif; ?>
@@ -49,11 +49,11 @@
    </div>
   </div>
   <div class="pure-g page">
-  	<div class="pure-u secondary">
     <?php if (isset($active_menu_tree)) : ?>
+	  	<div class="pure-u secondary">
       <div class="pure-menu pure-menu-open"><?php print render($active_menu_tree); ?></div>
+	    </div>
     <?php endif; ?>
-    </div>
     <div class="pure-u body">
       <div id="content">
         <div class="element-invisible"><a id="main-content"></a></div>
@@ -63,6 +63,12 @@
         <?php print render($page['content']); ?>
       </div>
     </div>
+   <?php if ($page['sidebar_first']) : ?>
+	   	<div class="pure-u sidebar-right">
+   			<?php print render($page['sidebar_first']); ?>
+ 			</div>
+   <?php endif; ?>
+
   </div>
   <div class="pure-g footer">
   	<div class="pure-u-1">
@@ -72,7 +78,7 @@
       	</div>
       	<?php print render($footer_message); ?>
         <?php print $feed_icons; ?>
-      </div>  
+      </div>
     </div>
   </div>
 </div>
