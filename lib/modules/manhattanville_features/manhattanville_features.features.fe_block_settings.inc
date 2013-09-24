@@ -152,7 +152,7 @@ function manhattanville_features_default_fe_block_settings() {
     'roles' => array(),
     'themes' => array(
       'manhattanville' => array(
-        'region' => 'content',
+        'region' => 'sidebar_first',
         'status' => 1,
         'theme' => 'manhattanville',
         'weight' => 0,
