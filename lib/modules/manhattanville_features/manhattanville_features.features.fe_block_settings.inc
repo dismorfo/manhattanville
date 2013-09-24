@@ -213,31 +213,5 @@ function manhattanville_features_default_fe_block_settings() {
     'visibility' => 1,
   );
 
-  $export['webform-client-block-13'] = array(
-    'cache' => -1,
-    'custom' => 0,
-    'delta' => 'client-block-13',
-    'module' => 'webform',
-    'node_types' => array(),
-    'pages' => 'construction',
-    'roles' => array(),
-    'themes' => array(
-      'rubik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'rubik',
-        'weight' => 0,
-      ),
-      'manhattanville' => array(
-        'region' => 'secondary_content',
-        'status' => 1,
-        'theme' => 'manhattanville',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 1,
-  );
-
   return $export;
 }
