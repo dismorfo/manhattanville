@@ -131,7 +131,7 @@ function mville_site_content() {
                        ),
                  );
 
-  $node_map = [];
+  $node_map = array();
 
   foreach ($nodes as $nodo) {
 
@@ -178,7 +178,7 @@ function mville_site_content() {
     $node_map[$node->title] = "node/" . $node->nid;
   }
 
-  $menu_ids = [];
+  $menu_ids = array();
 
   $item = array(
                 'link_title' => st('Home'),
