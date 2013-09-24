@@ -49,11 +49,11 @@
    </div>
   </div>
   <div class="pure-g page">
-  	<div class="pure-u secondary">
-      <?php if (isset($active_menu_tree)) : ?>
-        <div class="pure-menu pure-menu-open"><?php print render($active_menu_tree); ?></div>
-      <?php endif; ?>
-    </div>
+    <?php if (isset($active_menu_tree)) : ?>
+	  	<div class="pure-u secondary">
+      <div class="pure-menu pure-menu-open"><?php print render($active_menu_tree); ?></div>
+	    </div>
+    <?php endif; ?>
     <div class="pure-u body">
       <div class="pure-g">
         <div id="content" class="body-content pure-u">
@@ -70,6 +70,12 @@
         </div>
       </div>
     </div>
+   <?php if ($page['sidebar_first']) : ?>
+	   	<div class="pure-u sidebar-right">
+   			<?php print render($page['sidebar_first']); ?>
+ 			</div>
+   <?php endif; ?>
+
   </div>
   <div class="pure-g footer">
   	<div class="pure-u-1">
@@ -78,7 +84,7 @@
       	  <?php print render($footer_menu_tree); ?>
       	</div>
       	<?php print render($footer_message); ?>
-   <?php print render($social_media_links); ?>
+   			<?php print render($social_media_links); ?>
       </div>
     </div>
   </div>

@@ -131,7 +131,23 @@ function mville_site_content() {
       'field_organization' => 'Renzo Piano Building Workshop',
       'photo' => 'chaaya.jpg',
     ),
+    array(
+      'title' => 'Sample News Item 1',
+      'type' => 'news',
+      'body' => "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    ),
+    array(
+      'title' => 'Sample News Item 2',
+      'type' => 'news',
+      'body' => "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    ),
+    array(
+      'title' => 'Sample News Item 3',
+      'type' => 'news',
+      'body' => "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    ),
   );
+
 
   foreach($footer_links as $title) {
     $n = array(

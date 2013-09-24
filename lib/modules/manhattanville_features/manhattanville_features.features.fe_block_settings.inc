@@ -194,6 +194,25 @@ function manhattanville_features_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['views-news_items-block'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'delta' => 'news_items-block',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => 'home',
+    'roles' => array(),
+    'themes' => array(
+      'manhattanville' => array(
+        'region' => 'sidebar_first',
+        'status' => 1,
+        'theme' => 'manhattanville',
+        'weight' => 0,
+      ),
+    ),
+    'visibility' => 1,
+  );
+
   $export['webform-client-block-13'] = array(
     'cache' => -1,
     'custom' => 0,
