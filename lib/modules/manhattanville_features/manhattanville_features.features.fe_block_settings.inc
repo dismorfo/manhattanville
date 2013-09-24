@@ -21,22 +21,16 @@ function manhattanville_features_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'bartik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bartik',
-        'weight' => 0,
-      ),
       'manhattanville' => array(
         'region' => '',
         'status' => 0,
         'theme' => 'manhattanville',
         'weight' => 0,
       ),
-      'seven' => array(
+      'rubik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'seven',
+        'theme' => 'rubik',
         'weight' => 0,
       ),
     ),
@@ -53,22 +47,16 @@ function manhattanville_features_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'bartik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bartik',
-        'weight' => 0,
-      ),
       'manhattanville' => array(
         'region' => '',
         'status' => 0,
         'theme' => 'manhattanville',
         'weight' => 0,
       ),
-      'seven' => array(
+      'rubik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'seven',
+        'theme' => 'rubik',
         'weight' => 0,
       ),
     ),
@@ -85,22 +73,16 @@ function manhattanville_features_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'bartik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bartik',
-        'weight' => 0,
-      ),
       'manhattanville' => array(
         'region' => '',
         'status' => 0,
         'theme' => 'manhattanville',
         'weight' => 0,
       ),
-      'seven' => array(
+      'rubik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'seven',
+        'theme' => 'rubik',
         'weight' => 0,
       ),
     ),
@@ -117,22 +99,16 @@ function manhattanville_features_default_fe_block_settings() {
     'pages' => 'team',
     'roles' => array(),
     'themes' => array(
-      'bartik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bartik',
-        'weight' => 0,
-      ),
       'manhattanville' => array(
         'region' => 'content',
         'status' => 1,
         'theme' => 'manhattanville',
         'weight' => -10,
       ),
-      'seven' => array(
+      'rubik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'seven',
+        'theme' => 'rubik',
         'weight' => 0,
       ),
     ),
@@ -149,22 +125,16 @@ function manhattanville_features_default_fe_block_settings() {
     'pages' => 'team',
     'roles' => array(),
     'themes' => array(
-      'bartik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bartik',
-        'weight' => 0,
-      ),
       'manhattanville' => array(
         'region' => 'content',
         'status' => 1,
         'theme' => 'manhattanville',
         'weight' => -11,
       ),
-      'seven' => array(
+      'rubik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'seven',
+        'theme' => 'rubik',
         'weight' => 0,
       ),
     ),
