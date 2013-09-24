@@ -11395,7 +11395,7 @@ function manhattanville_features_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'install_profile';
-  $strongarm->value = 'standard';
+  $strongarm->value = 'manhattanville_profile';
   $export['install_profile'] = $strongarm;
 
   $strongarm = new stdClass();
