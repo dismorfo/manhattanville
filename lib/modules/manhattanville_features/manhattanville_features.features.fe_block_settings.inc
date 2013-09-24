@@ -209,6 +209,9 @@ function manhattanville_features_default_fe_block_settings() {
         'theme' => 'manhattanville',
         'weight' => 0,
       ),
+    ),
+    'visibility' => 1,
+  );
 
   $export['webform-client-block-13'] = array(
     'cache' => -1,

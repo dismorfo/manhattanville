@@ -240,12 +240,6 @@ function manhattanville_features_views_default_views() {
   $view->base_table = 'node';
   $view->human_name = 'News Items';
 
-  $view->name = 'stories';
-  $view->description = '';
-  $view->tag = 'default';
-  $view->base_table = 'node';
-  $view->human_name = 'Stories';
-
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -312,6 +306,18 @@ function manhattanville_features_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $export['news_items'] = $view;
+
+  $view = new view();
+
+  $view->name = 'stories';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Stories';
+
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   $handler = $view->new_display('default', 'Master', 'default');
 
