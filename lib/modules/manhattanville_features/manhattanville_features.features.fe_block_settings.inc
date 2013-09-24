@@ -33,12 +33,6 @@ function manhattanville_features_default_fe_block_settings() {
         'theme' => 'manhattanville',
         'weight' => 0,
       ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
     ),
     'title' => '',
     'visibility' => 0,
@@ -63,12 +57,6 @@ function manhattanville_features_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'manhattanville',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
         'weight' => 0,
       ),
     ),
@@ -97,12 +85,6 @@ function manhattanville_features_default_fe_block_settings() {
         'theme' => 'manhattanville',
         'weight' => 0,
       ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
     ),
     'title' => '',
     'visibility' => 0,
@@ -127,13 +109,33 @@ function manhattanville_features_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'manhattanville',
-        'weight' => -10,
+        'weight' => -11,
       ),
-      'seven' => array(
+    ),
+    'title' => '',
+    'visibility' => 1,
+  );
+
+  $export['views-construction_update-block'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'delta' => 'construction_update-block',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => 'construction',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'seven',
+        'theme' => 'bartik',
         'weight' => 0,
+      ),
+      'manhattanville' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'manhattanville',
+        'weight' => -9,
       ),
     ),
     'title' => '',
@@ -159,17 +161,63 @@ function manhattanville_features_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'manhattanville',
-        'weight' => -11,
+        'weight' => -10,
       ),
-      'seven' => array(
+    ),
+    'title' => '',
+    'visibility' => 1,
+  );
+
+  $export['views-stories-block'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'delta' => 'stories-block',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'seven',
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'manhattanville' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'manhattanville',
         'weight' => 0,
       ),
     ),
     'title' => '',
     'visibility' => 0,
+  );
+
+  $export['webform-client-block-13'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'delta' => 'client-block-13',
+    'module' => 'webform',
+    'node_types' => array(),
+    'pages' => 'construction',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'manhattanville' => array(
+        'region' => 'secondary_content',
+        'status' => 1,
+        'theme' => 'manhattanville',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 1,
   );
 
   return $export;

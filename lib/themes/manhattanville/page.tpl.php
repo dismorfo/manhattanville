@@ -1,4 +1,4 @@
-<div class="main">
+<div class="main<?php if (isset($page['secondary_content']) && !empty($page['secondary_content'])) : print ' has_sec_content'; endif; ?>">
   <div class="pure-g top">
     <div class="pure-u-1">
       <div class="pure-g columbia">
@@ -33,7 +33,7 @@
   	<div class="pure-u-1">
       <?php if ($tabs): ?>
           <?php print render($tabs); ?>    
-      <?php endif; ?>  		
+      <?php endif; ?>
       <?php print render($primary_local_tasks); ?>  		
       <?php if ($messages): ?>
         <div id="console" class="clearfix"><?php print $messages; ?></div>
@@ -50,17 +50,24 @@
   </div>
   <div class="pure-g page">
   	<div class="pure-u secondary">
-    <?php if (isset($active_menu_tree)) : ?>
-      <div class="pure-menu pure-menu-open"><?php print render($active_menu_tree); ?></div>
-    <?php endif; ?>
+      <?php if (isset($active_menu_tree)) : ?>
+        <div class="pure-menu pure-menu-open"><?php print render($active_menu_tree); ?></div>
+      <?php endif; ?>
     </div>
     <div class="pure-u body">
-      <div id="content">
-        <div class="element-invisible"><a id="main-content"></a></div>
-        <?php if (isset($trail_title)) : ?>
-          <h2 class="title"><?php print $trail_title ?></h2>
-        <?php endif; ?>
-        <?php print render($page['content']); ?>
+      <div class="pure-g">
+        <div id="content" class="body-content pure-u">
+          <div class="element-invisible"><a id="main-content"></a></div>
+          <?php if (isset($trail_title)) : ?>
+            <h2 class="title"><?php print $trail_title ?></h2>
+          <?php endif; ?>
+          <?php print render($page['content']); ?>
+        </div>
+        <div class="body-secondary-content pure-u">
+        	<?php if (isset($page['secondary_content'])) : ?>
+      	      <?php print render($page['secondary_content']) ?>
+      	  <?php endif; ?>
+        </div>
       </div>
     </div>
   </div>

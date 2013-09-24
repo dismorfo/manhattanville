@@ -46,6 +46,8 @@ function manhattanville_preprocess_page(&$vars) {
   
   $vars['footer_menu_tree'] = menu_tree_output($footer_menu_tree);
   
+  $vars['body_secondary_content'] = array('#markup' => '<p>This is something</p>');
+  
   foreach ($main_menu_tree as $key => $m) {
     if ($m['link']['in_active_trail'] && $main_menu_tree[$key]['below']) {
 	  $vars['trail_title'] = $vars['node']->title;

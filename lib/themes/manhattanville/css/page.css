@@ -19,25 +19,20 @@
   list-style-type: none;
 }
 
-.page .secondary .pure-menu ul li a {
- 
-}
-
 .page .secondary .pure-menu.pure-menu-open, 
 .page .secondary .pure-menu.pure-menu-horizontal li .pure-menu-children {
   background: transparent;
   border: none;
 }
 
-
-.page .body {
+.page .body-content {
   padding-left: 60px;
   border-left-color: #dfe8f2;
   border-left-style: solid;
   border-left-width: 1px;
   margin-bottom: 2.5em;
 }
-  .page .body h2q {
+  .page .body h2 {
     text-transform: uppercase;
     color: #163e75;
     margin-top: 0;  
@@ -47,10 +42,64 @@
   margin-top: 0;
 }
 
-
-  .main .page .body {
+  .main .page .body .body-content {
     max-width: 530px;
     width: 530px;
     color: #333333;
     font-size: 16px;      
   }
+
+.has_sec_content .page .secondary {
+  position:absolute; 
+  left:-10000px; 
+  top:auto; 
+  width:1px; 
+  height:1px; 
+  overflow:hidden;
+}
+
+.main.has_sec_content .page .body {
+  max-width: 100%;
+  width: 100%;
+}
+
+.main.has_sec_content .page .body .body-content {
+  width: 50%;
+}
+
+.main.has_sec_content .page .body .body-secondary-content {
+  width: 50%;
+}
+
+.has_sec_content .body-secondary-content {
+  background: #c6d0d1;
+  border-radius: 5px;
+}
+
+.has_sec_content .body-secondary-content .region-secondary-content {
+  width: 430px;
+}
+
+.has_sec_content .body-secondary-content .region {
+  padding: 2.3em 2.7em;
+}
+
+
+.has_sec_content .webform-component-textfield .form-text {
+  width: 230px;
+} 
+
+.has_sec_content .webform-component-email .form-email {
+  width: 230px;
+} 
+
+.has_sec_content .page .body-content {
+  padding-left: 0;
+  border-left-width: 0;
+  border-left-color: initial;
+  border-left-style: initial;
+}
+
+.has_sec_content .page .body-content .region-content {
+  padding-left: 47px;
+}

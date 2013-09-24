@@ -12,6 +12,7 @@ regions[page_banner] = Page banner
 regions[page_navigation] = Page navigation
 regions[help] = Help
 regions[content] = Content
+regions[secondary_content] = Secondary content
 regions[page_bottom] = Page bottom
 regions[page_footer] = Page footer
 regions[sidebar_first] = First sidebar

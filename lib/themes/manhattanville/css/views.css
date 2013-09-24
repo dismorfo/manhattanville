@@ -112,7 +112,6 @@
   vertical-align: top;
 }
 
-
 #block-views-stories-block h2 {
   position:absolute; 
   left:-10000px; 
@@ -132,4 +131,8 @@
 
 #block-views-stories-block .field-content :first-child {
   margin-top: 0;
+}
+
+.view-construction-update {
+  width: 415px;	
 }
