@@ -53,83 +53,96 @@ function mville_permissions() {
 
 
 function mville_site_content() {
+  $footer_links = array('Community Services', 'Resources', 'Contact Us');
+
   $nodes = array(
-                 array(
-                       'title' => 'Home',
-                       'language' => LANGUAGE_NONE,
-                       'type' => 'page',
-                       'bodytext' => '<p>Columbia’s Manhattanville campus will be a vibrant center of academic and civic life, ensuring that Upper Manhattan remains a world-class center of pioneering research and teaching. With its open, environmentally sustainable design, local retail amenities, and publicly accessible green spaces, the campus will provide a pedestrian-friendly connection between West Harlem and the scenic Harlem Piers Park along the Hudson River. The life of the project will span some three decades. The first phase of development includes innovative new buildings for Columbia’s Nobel Prize-winning neuroscience, Columbia Business School, the School of the Arts, an academic conference center and new spaces for art, culture and community.</p>
+    array(
+      'title' => 'Home',
+      'language' => LANGUAGE_NONE,
+      'type' => 'page',
+      'bodytext' => '<p>Columbia’s Manhattanville campus will be a vibrant center of academic and civic life, ensuring that Upper Manhattan remains a world-class center of pioneering research and teaching. With its open, environmentally sustainable design, local retail amenities, and publicly accessible green spaces, the campus will provide a pedestrian-friendly connection between West Harlem and the scenic Harlem Piers Park along the Hudson River. The life of the project will span some three decades. The first phase of development includes innovative new buildings for Columbia’s Nobel Prize-winning neuroscience, Columbia Business School, the School of the Arts, an academic conference center and new spaces for art, culture and community.</p>
 <p>A globally respected academic center, Columbia is also a vital local institution, committed to the economic, intellectual, social and cultural vitality of our neighborhoods and New York City. In that spirit, together with our West Harlem neighbors, elected representatives and civic leaders, we have developed a plan for a mixed-use academic center that provides a long-term future of shared opportunity.</p>
 <iframe width="560" height="315" src="//www.youtube.com/embed/CRdncAfENpY" frameborder="0" allowfullscreen></iframe>
 <p>The Jerome L. Greene Science Center, home to the Mortimer B. Zuckerman Mind, Brain, Behavior Institute, will open in 2015.</p>',
-                       ),
-                 array(
-                       'title' => 'Team',
-                       'language' => LANGUAGE_NONE,
-                       'type' => 'page',
-                       ),
-                 array(
-                       'title' => 'Academics',
-                       'language' => LANGUAGE_NONE,
-                       'type' => 'page',
-                       ),
-                 array(
-                       'title' => 'Community',
-                       'language' => LANGUAGE_NONE,
-                       'type' => 'page',
-                       //                       'banner' => '
-                       ),
-                 array(
-                       'title' => 'Planning and Design',
-                       'language' => LANGUAGE_NONE,
-                       'type' => 'page',
-                       'bodytext' => "<p>New York City and the world are very different places than when Columbia built its Morningside Heights campus more than a century ago. Today, an urban campus isn't defined by gates and walls, but by weaving the university into the fabric of city life. As a result, certain planning principles for Columbia's gradual growth in Manhattanville over the next quarter century have remained essential.</p><p>New York City and the world are very different places than when Columbia built its Morningside Heights campus more than a century ago. Today, an urban campus isn't defined by gates and walls, but by weaving the university into the fabric of city life. As a result, certain planning principles for Columbia's gradual growth in Manhattanville over the next quarter century have remained essential.</p><p>New York City and the world are very different places than when Columbia built its Morningside Heights campus more than a century ago. Today, an urban campus isn't defined by gates and walls, but by weaving the university into the fabric of city life. As a result, certain planning principles for Columbia's gradual growth in Manhattanville over the next quarter century have remained essential.</p>"
-                       ),
-                 array(
-                       'title' => 'Planning',
-                       'language' => LANGUAGE_NONE,
-                       'type' => 'page',
-                       ),
-                 array(
-                       'title' => 'Stories',
-                       'language' => LANGUAGE_NONE,
-                       'type' => 'page',
-                       ),
-                 array(
-                       'title' => 'Design Goals',
-                       'language' => LANGUAGE_NONE,
-                       'type' => 'page',
-                       ),
-                 array(
-                       'title' => 'Construction',
-                       'language' => LANGUAGE_NONE,
-                       'type' => 'page',
-                       ),
-                 array(
-                       'title' => 'La-Verna Fountain',
-                       'language' => LANGUAGE_NONE,
-                       'type' => 'team',
-                       'field_profile' => "<p>La-Verna Fountain currently serves as the Vice President for Construction Business Services and Communications at Columbia University in the City of New York. As the Vice President, Ms. Fountain will help lead our outreach and communications efforts regarding construction business opportunities and activities.</p><p>Prior to assuming the role in Facilities, Ms. Fountain served as the Associate Vice President of Public Affairs where she served as the Chief Operating Officer of Columbia's Office of Communications and Public Affairs and as the public affairs liaison on the University's top initiative—the expansion of the University.</p><p>In addition to her work at the University, Ms. Fountain is the President and founder of the Defiant Hope Consulting and Training Company. For the past 25 years, she has provided motivational speeches, training and facilitation on topics of conflict resolution, cultural diversity/human awareness, nonviolence as a way of life, working with teenagers, spirituality in the workplace, staff development and organizational development.</p><p>La-Verna also served as the Director of Communications for the Pennsylvania Department of Education, Senior Advisor to Save the Children for its U.S. programs, served as the State Office Director for former U.S. Senator Harris Wofford, and as Deputy Communications Director for the late Pennsylvania Governor Robert P. Casey.</p>",
+    ),
+    array(
+      'title' => 'Team',
+      'language' => LANGUAGE_NONE,
+      'type' => 'page',
+    ),
+    array(
+      'title' => 'Academics',
+      'language' => LANGUAGE_NONE,
+      'type' => 'page',
+    ),
+    array(
+      'title' => 'Community',
+      'language' => LANGUAGE_NONE,
+      'type' => 'page',
+      //                       'banner' => '
+    ),
+    array(
+      'title' => 'Planning and Design',
+      'language' => LANGUAGE_NONE,
+      'type' => 'page',
+      'bodytext' => "<p>New York City and the world are very different places than when Columbia built its Morningside Heights campus more than a century ago. Today, an urban campus isn't defined by gates and walls, but by weaving the university into the fabric of city life. As a result, certain planning principles for Columbia's gradual growth in Manhattanville over the next quarter century have remained essential.</p><p>New York City and the world are very different places than when Columbia built its Morningside Heights campus more than a century ago. Today, an urban campus isn't defined by gates and walls, but by weaving the university into the fabric of city life. As a result, certain planning principles for Columbia's gradual growth in Manhattanville over the next quarter century have remained essential.</p><p>New York City and the world are very different places than when Columbia built its Morningside Heights campus more than a century ago. Today, an urban campus isn't defined by gates and walls, but by weaving the university into the fabric of city life. As a result, certain planning principles for Columbia's gradual growth in Manhattanville over the next quarter century have remained essential.</p>"
+    ),
+    array(
+      'title' => 'Planning',
+      'language' => LANGUAGE_NONE,
+      'type' => 'page',
+    ),
+    array(
+      'title' => 'Stories',
+      'language' => LANGUAGE_NONE,
+      'type' => 'page',
+    ),
+    array(
+      'title' => 'Design Goals',
+      'language' => LANGUAGE_NONE,
+      'type' => 'page',
+    ),
+    array(
+      'title' => 'Construction',
+      'language' => LANGUAGE_NONE,
+      'type' => 'page',
+    ),
+    array(
+      'title' => 'La-Verna Fountain',
+      'language' => LANGUAGE_NONE,
+      'type' => 'team',
+      'field_profile' => "<p>La-Verna Fountain currently serves as the Vice President for Construction Business Services and Communications at Columbia University in the City of New York. As the Vice President, Ms. Fountain will help lead our outreach and communications efforts regarding construction business opportunities and activities.</p><p>Prior to assuming the role in Facilities, Ms. Fountain served as the Associate Vice President of Public Affairs where she served as the Chief Operating Officer of Columbia's Office of Communications and Public Affairs and as the public affairs liaison on the University's top initiative—the expansion of the University.</p><p>In addition to her work at the University, Ms. Fountain is the President and founder of the Defiant Hope Consulting and Training Company. For the past 25 years, she has provided motivational speeches, training and facilitation on topics of conflict resolution, cultural diversity/human awareness, nonviolence as a way of life, working with teenagers, spirituality in the workplace, staff development and organizational development.</p><p>La-Verna also served as the Director of Communications for the Pennsylvania Department of Education, Senior Advisor to Save the Children for its U.S. programs, served as the State Office Director for former U.S. Senator Harris Wofford, and as Deputy Communications Director for the late Pennsylvania Governor Robert P. Casey.</p>",
                        //                       'field_team' => 'Columbia Project Team',
-                       'photo' => 'fountain.jpg',
+      'photo' => 'fountain.jpg',
                        ),
-                 array(
-                       'title' => 'Renzo Piano',
-                       'language' => LANGUAGE_NONE,
-                       'type' => 'team',
-                       'field_profile' => "<p>Renzo Piano is the founder of Renzo Piano Building Workshop, an architectural firm with offices in Paris and Genoa. Before starting RPBW in 1993, he founded the Piano & Rogers agency with Richard Rogers in 1971 and l'Atelier Piano & Rice with engineer Peter Rice in 1977. RPBW has designed a number of venues and buildings around the world including the reconstruction of the Potsdamer Platz in Berlin. They are currently the architects of the new headquarters for the New York Times and Morgan Library addition in Manhattan and were recently commissioned as the architects for the London Bridge Tower. His firm has garnered several prestigious architectural honors, including the Pritzker Architecture Prize in 1998. He graduated in 1964 from the school of Architecture of the Milan Polytechnic.</p>",
-                       'field_organization' => 'Renzo Piano Building Workshop',
-                       'photo' => 'piano.jpg',
-                       ),
-                 array(
-                       'title' => 'Antoine Chaaya',
-                       'language' => LANGUAGE_NONE,
-                       'type' => 'team',
-                       'field_profile' => "<p>Born in Beirut, Chaaya is a graduate of Kaslik Saint-Esprit University. He joined the Paris office of Renzo Piano Building Workshop in 1988 and has worked as lead architect on a variety of projects including the Kanak Cultural Center in New Caledonia and the Potsdamer Platz project in Berlin. In 1997, he became a partner at RPBW. He was partner-in-charge of the new Il Sole 24 Ore headquarters in Milan and is now in charge of the Los Angeles County Museum of Art expansion project and phase one of Columbia’s proposed Manhattanville urban academic community.</p>",
-                       'field_organization' => 'Renzo Piano Building Workshop',
-                       'photo' => 'chaaya.jpg',
-                       ),
-                 );
+    array(
+      'title' => 'Renzo Piano',
+      'language' => LANGUAGE_NONE,
+      'type' => 'team',
+      'field_profile' => "<p>Renzo Piano is the founder of Renzo Piano Building Workshop, an architectural firm with offices in Paris and Genoa. Before starting RPBW in 1993, he founded the Piano & Rogers agency with Richard Rogers in 1971 and l'Atelier Piano & Rice with engineer Peter Rice in 1977. RPBW has designed a number of venues and buildings around the world including the reconstruction of the Potsdamer Platz in Berlin. They are currently the architects of the new headquarters for the New York Times and Morgan Library addition in Manhattan and were recently commissioned as the architects for the London Bridge Tower. His firm has garnered several prestigious architectural honors, including the Pritzker Architecture Prize in 1998. He graduated in 1964 from the school of Architecture of the Milan Polytechnic.</p>",
+      'field_organization' => 'Renzo Piano Building Workshop',
+      'photo' => 'piano.jpg',
+    ),
+    array(
+      'title' => 'Antoine Chaaya',
+      'language' => LANGUAGE_NONE,
+      'type' => 'team',
+      'field_profile' => "<p>Born in Beirut, Chaaya is a graduate of Kaslik Saint-Esprit University. He joined the Paris office of Renzo Piano Building Workshop in 1988 and has worked as lead architect on a variety of projects including the Kanak Cultural Center in New Caledonia and the Potsdamer Platz project in Berlin. In 1997, he became a partner at RPBW. He was partner-in-charge of the new Il Sole 24 Ore headquarters in Milan and is now in charge of the Los Angeles County Museum of Art expansion project and phase one of Columbia’s proposed Manhattanville urban academic community.</p>",
+      'field_organization' => 'Renzo Piano Building Workshop',
+      'photo' => 'chaaya.jpg',
+    ),
+  );
+
+  foreach($footer_links as $title) {
+    $n = array(
+      'title' => $title,
+      'language' => LANGUAGE_NONE,
+      'type' => 'page',
+      'bodytext' => generate_lorum_ipsum(),
+    );
+
+    array_push($nodes, $n);
+  }
 
   $node_map = array();
 
@@ -181,82 +194,99 @@ function mville_site_content() {
   $menu_ids = array();
 
   $item = array(
-                'link_title' => st('Home'),
-                'link_path' => $node_map['Home'],
-                'menu_name' => 'main-menu',
-                'weight' => 0,
-                 );
+    'link_title' => st('Home'),
+    'link_path' => $node_map['Home'],
+    'menu_name' => 'main-menu',
+    'weight' => 0,
+  );
   $menu_ids['Home'] = menu_link_save($item);
 
   $item = array(
-                'link_title' => st('Academics'),
-                'link_path' => $node_map['Academics'],
-                'menu_name' => 'main-menu',
-                'weight' => 1,
-                );
+    'link_title' => st('Academics'),
+    'link_path' => $node_map['Academics'],
+    'menu_name' => 'main-menu',
+    'weight' => 1,
+  );
   $menu_ids['Academics'] = menu_link_save($item);
 
   $item = array(
-                'link_title' => st('Planning and Design'),
-                'link_path' => $node_map['Planning and Design'],
-                'menu_name' => 'main-menu',
-                'weight' => 2,
-                );
+    'link_title' => st('Planning and Design'),
+    'link_path' => $node_map['Planning and Design'],
+    'menu_name' => 'main-menu',
+    'weight' => 2,
+  );
   $menu_ids['Planning and Design'] = menu_link_save($item);
 
   $item = array(
-                'link_title' => st('Construction'),
-                'link_path' => $node_map['Construction'],
-                'menu_name' => 'main-menu',
-                'weight' => 3,
-                );
+    'link_title' => st('Construction'),
+    'link_path' => $node_map['Construction'],
+    'menu_name' => 'main-menu',
+    'weight' => 3,
+  );
   $menu_ids['Construction'] = menu_link_save($item);
 
   $item = array(
-                'link_title' => st('Community'),
-                'link_path' => $node_map['Community'],
-                'menu_name' => 'main-menu',
-                'weight' => 4,
-                );
+    'link_title' => st('Community'),
+    'link_path' => $node_map['Community'],
+    'menu_name' => 'main-menu',
+    'weight' => 4,
+  );
   $menu_ids['Community'] = menu_link_save($item);
 
   $item = array(
-                'link_title' => st('Stories'),
-                'link_path' => $node_map['Stories'],
-                'menu_name' => 'main-menu',
-                'plid' => $menu_ids['Planning and Design'],
-                );
+    'link_title' => st('Stories'),
+    'link_path' => $node_map['Stories'],
+    'menu_name' => 'main-menu',
+    'plid' => $menu_ids['Planning and Design'],
+  );
 
   menu_link_save($item);
 
   $item = array(
-                'link_title' => st('Team'),
-                'link_path' => $node_map['Team'],
-                'menu_name' => 'main-menu',
-                'plid' => $menu_ids['Planning and Design'],
-                );
+    'link_title' => st('Team'),
+    'link_path' => $node_map['Team'],
+    'menu_name' => 'main-menu',
+    'plid' => $menu_ids['Planning and Design'],
+  );
 
   menu_link_save($item);
 
   $item = array(
-                 'link_title' => st('Planning'),
-                 'link_path' => $node_map['Planning'],
-                 'menu_name' => 'main-menu',
-                 'plid' => $menu_ids['Planning and Design'],
-                   );
+    'link_title' => st('Planning'),
+    'link_path' => $node_map['Planning'],
+    'menu_name' => 'main-menu',
+    'plid' => $menu_ids['Planning and Design'],
+  );
 
   menu_link_save($item);
 
   $item = array(
-                'link_title' => st('Design Goals'),
-                'link_path' => $node_map['Design Goals'],
-                'menu_name' => 'main-menu',
-                'plid' => $menu_ids['Planning and Design'],
-                );
+    'link_title' => st('Design Goals'),
+    'link_path' => $node_map['Design Goals'],
+    'menu_name' => 'main-menu',
+    'plid' => $menu_ids['Planning and Design'],
+  );
 
   menu_link_save($item);
+
+
+
+  foreach ($footer_links as $title) {
+
+    $item = array(
+      'link_title' => st($title),
+      'link_path' => $node_map[$title],
+      'menu_name' => 'menu-footer-menu',
+    );
+
+    menu_link_save($item);
+  }
 
   // Set the Home page
   variable_set('site_frontpage', $node_map['Home']);
+}
 
+
+function generate_lorum_ipsum() {
+  return "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie convallis est, quis interdum urna mollis euismod. Phasellus euismod bibendum pretium. Nam vestibulum accumsan ullamcorper. Nullam nec diam tortor. Suspendisse id risus adipiscing, ullamcorper risus vehicula, pellentesque felis. Sed mattis non orci vel viverra. Sed malesuada diam mauris, non eleifend risus elementum at. Mauris accumsan dolor sit amet tellus luctus sollicitudin. Sed consequat diam eget gravida interdum. Phasellus arcu risus, vulputate vel dapibus vel, vulputate condimentum ipsum. Vestibulum orci nibh, tincidunt eu facilisis adipiscing, viverra ut enim. Nam varius dui sit amet accumsan iaculis. Vestibulum non sodales ligula. Pellentesque dictum odio sed metus facilisis fringilla. Maecenas quis sagittis nulla. Mauris rhoncus eros laoreet, cursus ligula aliquam, sodales augue.</p><p>Curabitur et euismod orci, vel cursus tortor. Mauris semper lacus non orci convallis vehicula. Phasellus dolor odio, ornare nec nisi eu, fermentum dapibus felis. Nulla adipiscing erat auctor, cursus risus a, pulvinar enim. Nullam odio magna, semper ut tincidunt vel, lobortis quis nisi. Aliquam sodales sapien id cursus faucibus. Vivamus auctor, lorem a fermentum ultrices, tortor risus ultricies est, sit amet condimentum nisi tortor a arcu. Vivamus vulputate orci non orci cursus ultrices. Integer tortor quam, aliquam nec egestas ac, cursus in est. Cras ullamcorper et dolor eget vehicula. Maecenas adipiscing, purus placerat tristique sagittis, orci magna aliquam massa, quis elementum neque leo a dolor. Fusce quis molestie ligula, vel placerat est. Fusce pellentesque, nulla nec rutrum bibendum, erat sem sodales massa, nec blandit elit nisl sagittis elit. Duis venenatis tristique quam at dictum. Nullam nisl ipsum, convallis eu egestas vel, fermentum et augue.</p><p>Praesent aliquet pulvinar auctor. Ut quis interdum arcu. Mauris congue porta lectus, vitae pretium augue porttitor convallis. Aliquam erat volutpat. Suspendisse congue urna quis elit posuere venenatis. Nam ut aliquet enim. Morbi vehicula sollicitudin odio, fermentum ornare quam accumsan in. Maecenas vitae semper libero, non varius est. Suspendisse volutpat nunc at est accumsan, euismod malesuada quam vestibulum.</p>";
 }
