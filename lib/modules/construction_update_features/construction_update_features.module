@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Construction update features feature.
+ */
+
+include_once 'construction_update_features.features.inc';
