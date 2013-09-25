@@ -14,14 +14,14 @@ function block_manhattanville_block_info() {
   $blocks['manhattanville_search_widget'] = array(
     'info' => t('Columbia University Search form widget'),
   );
-  
+
   $blocks['mville_clean_construction'] = array(
     'info' => t('Clean construction'),
   );
-  
+
   $blocks['mville_contact_form'] = array(
-    'info' => t('Construction updates sing up form'),
-  );  
+    'info' => t('Construction updates sign up form'),
+  );
 
   $blocks['mville_social_media_links'] = array(
     'info' => t('Social Media Links'),
@@ -49,23 +49,23 @@ function block_manhattanville_block_view($delta = '') {
       break;
 
     case 'mville_clean_construction':
-	  
+
 	  $block['subject'] = t('Clean construction');
       $block['content'] = block_manhattanville_contents($delta);
-      
+
       break;
-	  
+
     case 'mville_contact_form':
-	  
-	  $block['subject'] = t('Sing up to receive our construction updates');
+
+	  $block['subject'] = t('Sign up to receive construction updates');
       $block['content'] = block_manhattanville_contents($delta);
-      
+
       break;
-	  
+
     case 'mville_social_media_links':
       $block['content'] = block_manhattanville_contents($delta);
       break;
-	  
+
 
   }
   return $block;
@@ -79,7 +79,7 @@ function block_manhattanville_block_view($delta = '') {
 function block_manhattanville_block_configure($delta = '') {
 
   $form = array();
-  
+
   if ($delta == 'mville_clean_construction') {
     // All we need to provide is the specific configuration options for our
     // block. Drupal will take care of the standard block configuration options
@@ -112,22 +112,22 @@ function block_manhattanville_block_save($delta = '', $edit = array()) {
 }
 
 function block_manhattanville_add_contacts() {
-  	
+
   global $user;
-	
+
   $node = (object) array(
     'uid' => $user->uid,
     'name' => (isset($user->name) ? $user->name : ''),
     'type' => 'contact',
     'language' => LANGUAGE_NONE,
   );
-    
+
   $form_state['build_info']['args'] = array($node);
-    
+
   form_load_include($form_state, 'inc', 'node', 'node.pages');
-    
+
   $contact_form = drupal_build_form('contact' . '_node_form', $form_state);
-	
+
   return render($contact_form);
 }
 
@@ -157,7 +157,7 @@ function block_manhattanville_contents($which_block) {
       return array('#markup' => variable_get('mville_clean_construction_string',  t('A default value. This block was created at %time', array('%time' => date('c')))));
 
       break;
-      
+
     case 'mville_contact_form' :
       return array('#markup' => block_manhattanville_add_contacts());
       break;
