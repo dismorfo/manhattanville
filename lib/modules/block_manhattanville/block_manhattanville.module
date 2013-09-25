@@ -25,11 +25,17 @@ function block_manhattanville_block_info() {
     // Block caching options (per role, per user, etc.)
     'cache' => DRUPAL_CACHE_PER_ROLE, // default
   );
+  
+  // Many options are defined in hook_block_info():
+  $blocks['mville_clean_construction'] = array(
+    // info: The name of the block.
+    'info' => t('Clean construction'),
+  );
+  
 
   $blocks['mville_social_media_links'] = array(
     'info' => t('Social Media Links'),
   );
-
 
   return $blocks;
 }
@@ -52,13 +58,62 @@ function block_manhattanville_block_view($delta = '') {
       $block['content'] = block_manhattanville_contents($delta);
       break;
 
+    case 'mville_clean_construction':
+	  
+	  $block['subject'] = t('Clean construction');
+      $block['content'] = block_manhattanville_contents($delta);
+      
+      break;
+	  
     case 'mville_social_media_links':
       $block['content'] = block_manhattanville_contents($delta);
       break;
+	  
 
   }
   return $block;
 }
+
+/**
+ * Implements hook_block_configure().
+ *
+ * This hook declares configuration options for blocks provided by this module.
+ */
+function block_manhattanville_block_configure($delta = '') {
+
+  $form = array();
+  
+  if ($delta == 'mville_clean_construction') {
+    // All we need to provide is the specific configuration options for our
+    // block. Drupal will take care of the standard block configuration options
+    // (block title, page visibility, etc.) and the save button.
+    $form['mville_clean_construction_string'] = array(
+      '#type' => 'textfield',
+      '#title' => t('Block contents'),
+      '#size' => 60,
+      '#description' => t('Add the clean construction content here.'),
+      '#default_value' => variable_get('mville_clean_construction_string',  t('Some example content.')),
+    );
+  }
+  return $form;
+}
+
+/**
+ * Implements hook_block_save().
+ *
+ * This hook declares how the configured options for a block
+ * provided by this module are saved.
+ */
+function block_manhattanville_block_save($delta = '', $edit = array()) {
+  // We need to save settings from the configuration form.
+  // We need to check $delta to make sure we are saving the right block.
+  if ($delta == 'mville_clean_construction') {
+    // Have Drupal save the string to the database.
+    variable_set('mville_clean_construction_string', $edit['mville_clean_construction_string']);
+  }
+  return;
+}
+
 
 /**
  * A module-defined block content function.
@@ -80,6 +135,11 @@ function block_manhattanville_contents($which_block) {
                     </form>';
 
       return array('#markup' => $block_form);
+      break;
+
+    case 'mville_clean_construction':
+      return array('#markup' => variable_get('manhattanville_clean_construction_string',  t('A default value. This block was created at %time', array('%time' => date('c')))));
+
       break;
 
     case 'mville_social_media_links':
