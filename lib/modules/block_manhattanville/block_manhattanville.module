@@ -88,7 +88,7 @@ function block_manhattanville_block_configure($delta = '') {
     // block. Drupal will take care of the standard block configuration options
     // (block title, page visibility, etc.) and the save button.
     $form['mville_clean_construction_string'] = array(
-      '#type' => 'textfield',
+      '#type' => 'textarea',
       '#title' => t('Block contents'),
       '#size' => 60,
       '#description' => t('Add the clean construction content here.'),
@@ -138,7 +138,7 @@ function block_manhattanville_contents($which_block) {
       break;
 
     case 'mville_clean_construction':
-      return array('#markup' => variable_get('manhattanville_clean_construction_string',  t('A default value. This block was created at %time', array('%time' => date('c')))));
+      return array('#markup' => variable_get('mville_clean_construction_string',  t('A default value. This block was created at %time', array('%time' => date('c')))));
 
       break;
 

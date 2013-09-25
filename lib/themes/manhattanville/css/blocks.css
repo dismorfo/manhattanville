@@ -1,23 +1,27 @@
+.sidebar-right {
+  margin-bottom: 1.5em;
+}
+
 /** not even screen readers */
-.body-secondary-content .block-contact-form-blocks .form-item-subject {
+.region-sidebar-first .block-contact-form-blocks .form-item-subject {
   display: none;
   visibility: hidden;
 }
 
 /** not even screen readers */
-.body-secondary-content .block-contact-form-blocks .form-item-cid {
+.region-sidebar-first .block-contact-form-blocks .form-item-cid {
   display: none;
   visibility: hidden;
 }
 
 /** not even screen readers */
-.body-secondary-content .block-contact-form-blocks .form-item-message {
+.region-sidebar-first .block-contact-form-blocks .form-item-message {
   display: none;
   visibility: hidden;
 }
 
 /** not even screen readers */
-.body-secondary-content .block-contact-form-blocks .form-item-copy {
+.region-sidebar-first .block-contact-form-blocks .form-item-copy {
   display: none;
   visibility: hidden;
 }
