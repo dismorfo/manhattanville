@@ -4,6 +4,7 @@
  * Override or insert variables into the page template.
  */
 function manhattanville_preprocess_page(&$vars) {
+  //print var_dump($vars);
 
   $cssConf = array(
     'group' => CSS_THEME,
@@ -27,6 +28,10 @@ function manhattanville_preprocess_page(&$vars) {
 	  }
 	}
   }
+
+  // probably should give this region a better name
+  // if it's there, change the layout to 50/50
+
 
   drupal_add_css('.banner {background-image: url("' . $file_uri . '");}', $cssConf);
 
