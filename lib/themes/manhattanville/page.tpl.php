@@ -49,29 +49,25 @@
    </div>
   </div>
   <div class="pure-g page">
-    <?php if (isset($active_menu_tree)) : ?>
-	  	<div class="pure-u secondary">
+   <?php if (!$page['sidebar_first']) : ?>
+	  	<div class="pure-u-1-4 secondary">
       <div class="pure-menu pure-menu-open"><?php print render($active_menu_tree); ?></div>
 	    </div>
-    <?php endif; ?>
-    <div class="pure-u body">
-      <div class="pure-g">
-        <div id="content" class="body-content pure-u">
-          <div class="element-invisible"><a id="main-content"></a></div>
-          <?php if (isset($trail_title)) : ?>
-            <h2 class="title"><?php print $trail_title ?></h2>
-          <?php endif; ?>
-          <?php print render($page['content']); ?>
-        </div>
-        <div class="body-secondary-content pure-u">
-        	<?php if (isset($page['secondary_content'])) : ?>
-      	      <?php print render($page['secondary_content']) ?>
-      	  <?php endif; ?>
-        </div>
-      </div>
+   <?php endif; ?>
+
+<?php $body_class = (!$page['sidebar_first'] ? 'pure-u-3-4' : 'pure-u-1-2'); ?>
+
+    <div class="<?php print $body_class; ?> content">
+
+       <div class="element-invisible"><a id="main-content"></a></div>
+        <?php if (isset($trail_title)) : ?>
+           <h2 class="title"><?php print $trail_title ?></h2>
+         <?php endif; ?>
+        <?php print render($page['content']); ?>
+
     </div>
    <?php if ($page['sidebar_first']) : ?>
-	   	<div class="pure-u sidebar-right">
+	   	<div class="pure-u-1-2 sidebar-right">
    			<?php print render($page['sidebar_first']); ?>
  			</div>
    <?php endif; ?>
