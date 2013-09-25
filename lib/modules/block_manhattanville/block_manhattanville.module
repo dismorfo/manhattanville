@@ -87,7 +87,7 @@ function block_manhattanville_block_configure($delta = '') {
     $form['mville_clean_construction_string'] = array(
       '#type' => 'textarea',
       '#title' => t('Block contents'),
-      '#size' => 60,
+      '#size' => 20,
       '#description' => t('Add the clean construction content here.'),
       '#default_value' => variable_get('mville_clean_construction_string',  t('Some example content.')),
     );

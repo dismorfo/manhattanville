@@ -63,10 +63,16 @@
   border-radius: 10px;
   margin-left: 2em;
   margin-right: 20px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.page .sidebar-right .sidebar-inner h2 {
+  font-size: 1.2em;
 }
 
 #block-views-news-items-block {
-  padding: 10px;
+
 }
 
 .has_sec_content .page .secondary {
