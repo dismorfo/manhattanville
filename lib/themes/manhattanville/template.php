@@ -4,8 +4,9 @@
  * Override or insert variables into the page template.
  */
 function manhattanville_preprocess_page(&$vars) {
+	
   //print var_dump($vars);
-
+  	
   $cssConf = array(
     'group' => CSS_THEME,
     'type' => 'inline',
@@ -54,8 +55,6 @@ function manhattanville_preprocess_page(&$vars) {
   $vars['main_menu_tree'] = menu_tree_output($main_menu_tree);
 
   $vars['footer_menu_tree'] = menu_tree_output($footer_menu_tree);
-
-  $vars['body_secondary_content'] = array('#markup' => '<p>This is something</p>');
 
   foreach ($main_menu_tree as $key => $m) {
     if ($m['link']['in_active_trail'] && $main_menu_tree[$key]['below']) {

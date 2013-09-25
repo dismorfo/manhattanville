@@ -69,9 +69,9 @@
     </div>
    <?php if ($page['sidebar_first']) : ?>
 	   	<div class="pure-u-1-2 sidebar-right">
-       <div class="sidebar-inner">
-     		<?php print render($page['sidebar_first']); ?>
-   		</div>
+        <div class="sidebar-inner">
+     		  <?php print render($page['sidebar_first']); ?>
+   			</div>
  			</div>
    <?php endif; ?>
 
