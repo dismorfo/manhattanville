@@ -4,9 +4,9 @@
  * Override or insert variables into the page template.
  */
 function manhattanville_preprocess_page(&$vars) {
-	
+
   //print var_dump($vars);
-  	
+
   $cssConf = array(
     'group' => CSS_THEME,
     'type' => 'inline',
@@ -30,9 +30,9 @@ function manhattanville_preprocess_page(&$vars) {
 	}
   }
 
-  // probably should give this region a better name
-  // if it's there, change the layout to 50/50
-
+  if ($vars['node'] && $vars['node']->title == 'Home') { #sorry
+    $vars['livable_city_logo'] = base_path() . path_to_theme() . '/img/livable_city_logo.png';
+  }
 
   drupal_add_css('.banner {background-image: url("' . $file_uri . '");}', $cssConf);
 

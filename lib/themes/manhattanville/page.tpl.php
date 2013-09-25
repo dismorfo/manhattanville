@@ -72,9 +72,13 @@
         <div class="sidebar-inner">
      		  <?php print render($page['sidebar_first']); ?>
    			</div>
+   <?php if (isset($livable_city_logo)) : ?>
+	   <div id="livable-city-logo">
+   		 <img src="<?php print $livable_city_logo; ?>" />
+   	 </div>
+   <?php endif; ?>
  			</div>
    <?php endif; ?>
-
   </div>
   <div class="pure-g footer">
   	<div class="pure-u-1">
