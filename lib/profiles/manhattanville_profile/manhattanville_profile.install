@@ -62,7 +62,7 @@ function mville_site_content() {
       'type' => 'page',
       'bodytext' => '<p>Columbia’s Manhattanville campus will be a vibrant center of academic and civic life, ensuring that Upper Manhattan remains a world-class center of pioneering research and teaching. With its open, environmentally sustainable design, local retail amenities, and publicly accessible green spaces, the campus will provide a pedestrian-friendly connection between West Harlem and the scenic Harlem Piers Park along the Hudson River. The life of the project will span some three decades. The first phase of development includes innovative new buildings for Columbia’s Nobel Prize-winning neuroscience, Columbia Business School, the School of the Arts, an academic conference center and new spaces for art, culture and community.</p>
 <p>A globally respected academic center, Columbia is also a vital local institution, committed to the economic, intellectual, social and cultural vitality of our neighborhoods and New York City. In that spirit, together with our West Harlem neighbors, elected representatives and civic leaders, we have developed a plan for a mixed-use academic center that provides a long-term future of shared opportunity.</p>
-<iframe width="560" height="315" src="//www.youtube.com/embed/CRdncAfENpY" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/CRdncAfENpY" frameborder="0" allowfullscreen></iframe>
 <p>The Jerome L. Greene Science Center, home to the Mortimer B. Zuckerman Mind, Brain, Behavior Institute, will open in 2015.</p>',
     ),
     array(
@@ -131,22 +131,28 @@ function mville_site_content() {
       'field_organization' => 'Renzo Piano Building Workshop',
       'photo' => 'chaaya.jpg',
     ),
-    array(
-      'title' => 'Sample News Item 1',
-      'type' => 'news',
-      'body' => "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-    ),
-    array(
-      'title' => 'Sample News Item 2',
-      'type' => 'news',
-      'body' => "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-    ),
-    array(
-      'title' => 'Sample News Item 3',
-      'type' => 'news',
-      'body' => "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-    ),
   );
+
+  $i = 1;
+  while($i < 4) {
+    $news_item = array(
+      'title' => 'Sample News Item ' . $i,
+      'type' => 'news',
+      'body' => "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    );
+
+    $construction_update = array(
+      'title' => 'Sample Construction Update' . $i,
+      'type' => 'construction_updates',
+      'date' => '09/23/2013',
+      'update' => "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    );
+
+    array_push($nodes, $news_item);
+    array_push($nodes, $construction_update);
+
+    $i = $i + 1;
+  }
 
 
   foreach($footer_links as $title) {
