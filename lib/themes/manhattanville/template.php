@@ -30,7 +30,7 @@ function manhattanville_preprocess_page(&$vars) {
 	}
   }
 
-  if ($vars['node'] && $vars['node']->title == 'Home') { #sorry
+  if ( isset($vars['node']) && $vars['node']->title == 'Home') { #sorry; can we make this a in-code-block ? 
     $vars['livable_city_logo'] = base_path() . path_to_theme() . '/img/livable_city_logo.png';
   }
 
