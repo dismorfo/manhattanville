@@ -64,3 +64,6 @@ projects[tao][version] = "3.0-beta4"
  projects[manhattanville][download][source] = lib/themes/manhattanville
  projects[manhattanville][type] = "theme"
 
+ projects[construction_update_features][download][type] = "local"
+ projects[construction_update_features][download][source] = lib/modules/construction_update_features
+ projects[construction_update_features][type] = "module"
