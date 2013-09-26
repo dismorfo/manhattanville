@@ -48,33 +48,48 @@
 }
 
 #service-links li a {
-  background: url('http://www.columbia.edu/sites/all/themes/base/columbia2/images/footericons.png') no-repeat;
   display: block;
   margin-right: 5px;
   text-indent: -5000px;
-  width: 19px;
-  height: 18px;
+  height: 30px;
 }
 
 #service-links li.twitter a {
-  background: url('http://www.columbia.edu/sites/all/themes/ias/cu2/images/link-tw.png') no-repeat;
-  width: 17px;
+  background: url('../img/twitter.png');
+  width: 26px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#service-links li.facebook a {
+  background: url('../img/facebook.png');
+  width: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #service-links li.itunes a {
-  background-position: -21px 0;
-  width: 20px;
+  background: url('../img/itunes.png');
+  width: 28px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 #service-links li.rss a {
-  background-position: -43px 0;
-  width: 20px;
+  background: url('../img/icon.png');
+  width: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 #service-links li.youtube a {
-  background-position: -65px 0;
-  width: 45px;
+  background: url('../img/youtube.png');
+  width: 36px;
   margin-right: 0;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 #service-links li.gplus a {
-  background-position: -129px 0;
-  width: 17px;
+  background: url('../img/google_plus.png');
+  width: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
