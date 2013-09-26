@@ -16,15 +16,27 @@ projects[auto_nodetitle][version] = "1.0"
 
 projects[ctools][version] = "1.3"
 
+projects[context][version] = "3.0-beta7"
+
+projects[date][version] = "2.6"
+
 projects[devel][version] = "1.3"
 
 projects[diff][version] = "3.2"
+
+projects[email][version] = "1.2"
+
+projects[entity][version] = "1.2"
 
 projects[features_extra][version] = "1.0-beta1"
 
 projects[features][version] = "2.0-rc3"
 
 projects[media][version] = "1.3"
+
+projects[libraries][version] = "2.1"
+
+projects[media_youtube][version] = "2.0-rc3"
 
 projects[footer_message][version] = "1.1"
 
@@ -42,7 +54,6 @@ projects[token][version] = "1.5"
 
 projects[views][version] = "3.7"
 
-projects[webform][version] = "3.19"
 
 ; Themes
 
