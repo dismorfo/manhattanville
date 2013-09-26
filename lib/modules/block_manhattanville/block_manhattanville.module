@@ -4,6 +4,11 @@
  * Module file for block_manhattanville.
  */
 
+ 
+ function block_manhattanville_node_presave($node) {
+ 	// dpm($node);
+ }
+ 	
 /**
  * Implements hook_block_info().
  *
