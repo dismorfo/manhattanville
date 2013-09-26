@@ -7,9 +7,9 @@
     padding: auto 0;
     text-transform: uppercase;
   }
-  
-    .main .nav a, 
-    .main .nav a:link, 
+
+    .main .nav a,
+    .main .nav a:link,
     .main .nav a:visited {
       color: #f8f5f5;
     }
@@ -19,23 +19,36 @@
       margin: auto 0;
       color: #fff;
     }
-    
+
     .main .nav .pure-menu ul {
       text-align: center;
       width: 100%;
     }
 
-    .main .nav .pure-menu.pure-menu-open, 
+    .main .nav .pure-menu.pure-menu-open,
     .main .nav .pure-menu.pure-menu-horizontal li .pure-menu-children {
       background-color: #163e75;
     }
-    
-    .main .nav .pure-menu li a:hover, 
+
+    .main .nav .pure-menu li a:hover,
     .main .nav .pure-menu li a:focus {
       background: inherit;
     }
-    
-    .main .nav .pure-menu, 
+
+    .main .nav .pure-menu,
     .main .nav .pure-menu li {
       height: 50px;
+    }
+
+    .main ul.menu li a {
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 5px;
+      margin-top: 5px;
+      margin-left: 1.5em;
+      margin-right: 1.5em;
+    }
+
+    .main ul.menu li a.active-trail {
+      border-top: 2px solid white;
     }
