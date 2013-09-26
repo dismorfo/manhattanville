@@ -74,18 +74,22 @@ function mville_site_content() {
       'title' => 'Academics',
       'language' => LANGUAGE_NONE,
       'type' => 'page',
+      'banner' => 'academics.jpg',
+      'bodytext' => generate_lorum_ipsum(),
     ),
     array(
       'title' => 'Community',
       'language' => LANGUAGE_NONE,
       'type' => 'page',
+      'bodytext' => generate_lorum_ipsum(),
       //                       'banner' => '
     ),
     array(
       'title' => 'Planning and Design',
       'language' => LANGUAGE_NONE,
       'type' => 'page',
-      'bodytext' => "<p>New York City and the world are very different places than when Columbia built its Morningside Heights campus more than a century ago. Today, an urban campus isn't defined by gates and walls, but by weaving the university into the fabric of city life. As a result, certain planning principles for Columbia's gradual growth in Manhattanville over the next quarter century have remained essential.</p><p>New York City and the world are very different places than when Columbia built its Morningside Heights campus more than a century ago. Today, an urban campus isn't defined by gates and walls, but by weaving the university into the fabric of city life. As a result, certain planning principles for Columbia's gradual growth in Manhattanville over the next quarter century have remained essential.</p><p>New York City and the world are very different places than when Columbia built its Morningside Heights campus more than a century ago. Today, an urban campus isn't defined by gates and walls, but by weaving the university into the fabric of city life. As a result, certain planning principles for Columbia's gradual growth in Manhattanville over the next quarter century have remained essential.</p>"
+      'bodytext' => "<p>New York City and the world are very different places than when Columbia built its Morningside Heights campus more than a century ago. Today, an urban campus isn't defined by gates and walls, but by weaving the university into the fabric of city life. As a result, certain planning principles for Columbia's gradual growth in Manhattanville over the next quarter century have remained essential.</p><p>New York City and the world are very different places than when Columbia built its Morningside Heights campus more than a century ago. Today, an urban campus isn't defined by gates and walls, but by weaving the university into the fabric of city life. As a result, certain planning principles for Columbia's gradual growth in Manhattanville over the next quarter century have remained essential.</p><p>New York City and the world are very different places than when Columbia built its Morningside Heights campus more than a century ago. Today, an urban campus isn't defined by gates and walls, but by weaving the university into the fabric of city life. As a result, certain planning principles for Columbia's gradual growth in Manhattanville over the next quarter century have remained essential.</p>",
+      'banner' => 'planning.jpg',
     ),
     array(
       'title' => 'Planning',
@@ -187,6 +191,18 @@ function mville_site_content() {
         $node->body['und'][0]['summary'] = text_summary($nodo['bodytext']);
         $node->body['und'][0]['value'] = $nodo['bodytext'];
       }
+
+      if (array_key_exists('banner', $nodo)) {
+        $file_path = drupal_get_path('profile', 'manhattanville_profile') . '/images/' . $nodo['banner'];
+        $file = (object)array(
+          'uid' => 1,
+          'uri' => $file_path,
+          'filemime' => file_get_mimetype($file_path),
+          'status' => 1
+        );
+        $file = file_copy($file, 'public://', FILE_EXISTS_REPLACE);
+        $node->field_banner['und'][0] = (array)$file;
+      }
     } else if ($node->type == 'team') {
       $node->field_profile['und'][0]['value'] = $nodo['field_profile'];
       if (array_key_exists('field_organization', $nodo)) {
@@ -195,11 +211,11 @@ function mville_site_content() {
       //      $node->field_team['und'][]['tid'] = $nodo['field_team'];
       $file_path = drupal_get_path('profile', 'manhattanville_profile') . '/images/' . $nodo['photo'];
       $file = (object)array(
-                            'uid' => 1,
-                            'uri' => $file_path,
-                            'filemime' => file_get_mimetype($file_path),
-                            'status' => 1
-                            );
+        'uid' => 1,
+        'uri' => $file_path,
+        'filemime' => file_get_mimetype($file_path),
+        'status' => 1
+      );
 
       $file = file_copy($file, 'public://', FILE_EXISTS_REPLACE);
       $node->field_photo['und'][0] = (array)$file;
