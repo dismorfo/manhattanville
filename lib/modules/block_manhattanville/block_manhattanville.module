@@ -56,7 +56,6 @@ function block_manhattanville_block_view($delta = '') {
       break;
 
     case 'mville_contact_form':
-
 	  $block['subject'] = t('Sign up to receive construction updates');
       $block['content'] = block_manhattanville_contents($delta);
 
@@ -121,6 +120,8 @@ function block_manhattanville_add_contacts() {
     'type' => 'contact',
     'language' => LANGUAGE_NONE,
   );
+
+  drupal_add_js(drupal_get_path('module', 'block_manhattanville') . '/block_manhattanville.js', 'file');
 
   $form_state['build_info']['args'] = array($node);
 
