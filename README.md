@@ -31,11 +31,11 @@ Now run the installation process using the distributed profile
 
 	drush site-install manhattanville_profile --site-name=Manhattanville --db-url=mysql://USER:PASSWORD@127.0.0.1:PORT/DB_NAME
 
-Some configuration settings packaged in the 'manhattanville_features' module may fail to load, so the module should be reverted right away.
+Some configuration settings captured in 'feature' modules need to be reloaded after installation:
 
-	drush fr manhattanville_features
+	drush features-revert-all
 
-Visit the site 
+Visit the site and login using the 'admin' account and the password returned by the site-install command.
 
 
 
