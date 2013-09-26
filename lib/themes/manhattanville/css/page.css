@@ -79,6 +79,10 @@
 
 }
 
+.page iframe {
+  width: 100%;
+}
+
 .has_sec_content .page .secondary {
   position:absolute;
   left:-10000px;
