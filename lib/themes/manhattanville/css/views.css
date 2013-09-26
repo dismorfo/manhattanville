@@ -121,7 +121,7 @@
   overflow:hidden;	
 }
 
-#block-views-stories-block .views-field-title {
+.views-field-title {
   font-family: Oswald, sans-serif;
   text-transform: uppercase;
   font-weight: normal;
@@ -135,4 +135,12 @@
 
 .view-construction-update {
   width: 415px;	
+}
+
+.view-construction-update .views-field-title {
+  text-transform: initial;
+}
+
+.view-construction-update .date-display-single {
+  font-size: 85%;
 }

@@ -59,12 +59,11 @@
 }
 
 .page .sidebar-right .sidebar-inner {
-	background-color: #CFD9DA;
+  background-color: #CFD9DA;
   border-radius: 10px;
   margin-left: 2em;
   margin-right: 20px;
-  padding-left: 40px;
-  padding-top: 20px;
+  padding: 1.3em 2.5em;
 }
 
 .page .sidebar-right .sidebar-inner h2 {
@@ -133,4 +132,9 @@
 
 .has_sec_content .page .body-content .region-content {
   padding-left: 47px;
+}
+
+
+.region-sidebar-first iframe {
+  width: 100%;
 }

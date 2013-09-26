@@ -35,9 +35,11 @@
           <?php print render($tabs); ?>
       <?php endif; ?>
       <?php print render($primary_local_tasks); ?>
-      <?php if ($messages): ?>
-        <div id="console" class="clearfix"><?php print $messages; ?></div>
-      <?php endif; ?>
+      <div id="console" class="clearfix">
+        <?php if ($messages): ?>
+          <?php print $messages; ?></div>
+        <?php endif; ?>
+      </div>
       <?php if ($page['help']): ?>
         <div id="help">
           <?php print render($page['help']); ?>

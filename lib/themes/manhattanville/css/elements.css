@@ -11,3 +11,7 @@ a, a:visited, a:link  {
   color: #163e75;
   text-decoration: none;
 }
+
+h2 {
+  font-size: 1.2em;
+}
