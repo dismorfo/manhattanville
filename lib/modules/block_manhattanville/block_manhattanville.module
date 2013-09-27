@@ -3,10 +3,9 @@
  * @file
  * Module file for block_manhattanville.
  */
-
  
  function block_manhattanville_node_presave($node) {
- 	// dpm($node);
+   // dpm($node);
  }
  	
 /**
