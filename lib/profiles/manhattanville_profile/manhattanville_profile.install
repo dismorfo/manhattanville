@@ -75,24 +75,25 @@ function mville_site_content() {
       'language' => LANGUAGE_NONE,
       'type' => 'page',
       'banner' => 'academics.jpg',
-      'bodytext' => manhattanville_profile_generate_lorum_ipsum(),
+      'bodytext' => manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum(),
     ),
     array(
       'title' => 'Community',
       'language' => LANGUAGE_NONE,
       'type' => 'page',
-      'bodytext' => manhattanville_profile_generate_lorum_ipsum(),
+      'bodytext' => manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_video() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum(),
     ),
     array(
       'title' => 'Planning and Design',
       'language' => LANGUAGE_NONE,
       'type' => 'page',
-      'bodytext' => "<p>New York City and the world are very different places than when Columbia built its Morningside Heights campus more than a century ago. Today, an urban campus isn't defined by gates and walls, but by weaving the university into the fabric of city life. As a result, certain planning principles for Columbia's gradual growth in Manhattanville over the next quarter century have remained essential.</p><p>New York City and the world are very different places than when Columbia built its Morningside Heights campus more than a century ago. Today, an urban campus isn't defined by gates and walls, but by weaving the university into the fabric of city life. As a result, certain planning principles for Columbia's gradual growth in Manhattanville over the next quarter century have remained essential.</p><p>New York City and the world are very different places than when Columbia built its Morningside Heights campus more than a century ago. Today, an urban campus isn't defined by gates and walls, but by weaving the university into the fabric of city life. As a result, certain planning principles for Columbia's gradual growth in Manhattanville over the next quarter century have remained essential.</p>",
+       'bodytext' => manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum(),
       'banner' => 'planning.jpg',
     ),
     array(
       'title' => 'Planning',
       'language' => LANGUAGE_NONE,
+      'bodytext' => manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_video() . manhattanville_profile_generate_lorum_ipsum(),
       'type' => 'page',
     ),
     array(
@@ -103,6 +104,7 @@ function mville_site_content() {
     array(
       'title' => 'Design Goals',
       'language' => LANGUAGE_NONE,
+      'bodytext' => manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_video() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum(),
       'type' => 'page',
     ),
     array(
@@ -524,5 +526,11 @@ function  manhattanville_profile_generate_lorum_ipsum() {
    );
   
   return $text[rand(0,7)];
+  
+}
+
+
+function  manhattanville_profile_generate_video() {
+  return '<iframe width="560" height="315" src="http://www.youtube.com/embed/CRdncAfENpY" frameborder="0" allowfullscreen></iframe>';
   
 }
