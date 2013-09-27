@@ -92,6 +92,7 @@ features[node][] = news
 features[node][] = page
 features[node][] = story
 features[node][] = team
+features[taxonomy][] = tags
 features[user_role][] = administrator
 features[variable][] = admin_theme
 features[variable][] = comment_page
