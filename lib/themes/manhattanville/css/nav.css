@@ -1,62 +1,61 @@
-  .main .nav {
-  	font-family: 'Oswald', sans-serif;
-    background-color: #163e75;
-    height: 50px;
-    vertical-align: middle;
-    margin: auto 0;
-    padding: auto 0;
-    text-transform: uppercase;
+.main .nav {
+  font-family: 'Oswald', sans-serif;
+  background-color: #163e75;
+  height: 50px;
+  vertical-align: middle;
+  margin: auto 0;
+  padding: auto 0;
+  text-transform: uppercase;
+}
+
+  .main .nav a,
+  .main .nav a:link,
+  .main .nav a:visited {
+    color: #f8f5f5;
   }
 
-    .main .nav a,
-    .main .nav a:link,
-    .main .nav a:visited {
-      color: #f8f5f5;
-    }
+  .main .nav .pure-menu {
+    vertical-align: middle;
+    margin: auto 0;
+    color: #fff;
+  }
 
-    .main .nav .pure-menu {
-      vertical-align: middle;
-      margin: auto 0;
-      color: #fff;
-    }
+  .main .nav .pure-menu ul {
+    text-align: center;
+    width: 100%;
+  }
 
-    .main .nav .pure-menu ul {
-      text-align: center;
-      width: 100%;
-    }
+  .main .nav .pure-menu.pure-menu-open,
+  .main .nav .pure-menu.pure-menu-horizontal li .pure-menu-children {
+    background-color: #163e75;
+  }
 
-    .main .nav .pure-menu.pure-menu-open,
-    .main .nav .pure-menu.pure-menu-horizontal li .pure-menu-children {
-      background-color: #163e75;
-    }
+  .main .nav .pure-menu li a:hover,
+  .main .nav .pure-menu li a:focus {
+    background: inherit;
+  }
 
-    .main .nav .pure-menu li a:hover,
-    .main .nav .pure-menu li a:focus {
-      background: inherit;
-    }
+  .main .nav .pure-menu,
+  .main .nav .pure-menu li {
+    height: 48px;
+  }
 
-    .main .nav .pure-menu,
-    .main .nav .pure-menu li {
-      height: 48px;
-    }
-
-    .main ul.menu li a {
-      padding-left: 0;
-      padding-right: 0;
-      padding-top: 5px;
-      margin-top: 5px;
-      margin-left: 1.5em;
-      margin-right: 1.5em;
-      border-top: 2px solid #163e75;
-    }
+  .main .nav ul.menu li a {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    border-top: 2px solid #163e75;
+  }
     
-    .main ul.menu li a:hover,
-    .main ul.menu li a:focus,
-    .main ul.menu li a:active {
-      border-top: 2px solid white;
-    }    
+  .main .nav ul.menu li a:hover,
+  .main .nav ul.menu li a:focus,
+  .main .nav ul.menu li a:active {
+    border-top: 2px solid white;
+  }    
 
-    .main ul.menu li a.active-trail {
-      border-top: 2px solid white;
-    }
-    
+  .main .nav ul.menu li a.active-trail {
+    border-top: 2px solid white;
+  }

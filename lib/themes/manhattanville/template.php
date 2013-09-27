@@ -8,11 +8,11 @@ function manhattanville_preprocess_page(&$vars) {
   // print var_dump($vars);
   
   // this will fail because we need to set jQuery 1.8 at jQuery update module; right now is set to 1.5
-  // drupal_add_js('//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js', array(
-    //'type' => 'external',
-    //'scope' => 'header',
-    //'group' => JS_THEME,
-  //));
+  drupal_add_js('//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js', array(
+    'type' => 'external',
+    'scope' => 'header',
+    'group' => JS_THEME,
+  ));
   
   $cssConf = array(
     'group' => CSS_THEME,
