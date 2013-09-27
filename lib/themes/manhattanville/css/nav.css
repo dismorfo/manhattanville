@@ -37,7 +37,7 @@
 
     .main .nav .pure-menu,
     .main .nav .pure-menu li {
-      height: 50px;
+      height: 48px;
     }
 
     .main ul.menu li a {
@@ -47,8 +47,16 @@
       margin-top: 5px;
       margin-left: 1.5em;
       margin-right: 1.5em;
+      border-top: 2px solid #163e75;
     }
+    
+    .main ul.menu li a:hover,
+    .main ul.menu li a:focus,
+    .main ul.menu li a:active {
+      border-top: 2px solid white;
+    }    
 
     .main ul.menu li a.active-trail {
       border-top: 2px solid white;
     }
+    
