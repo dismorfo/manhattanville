@@ -114,19 +114,21 @@ function mville_site_content() {
     ),
     
     array(
-      'title' => 'Renzo Piano',
+      'title' => filter_xss('Renzo Piano'),
       'language' => LANGUAGE_NONE,
       'type' => 'team',
       'field_team' => 'Design Team',
+      'photo' => 'piano.jpg',
       'field_organization' => 'Renzo Piano Building Workshop',      
       'field_profile' => filter_xss("<p>Born in Beirut, Chaaya is a graduate of Kaslik Saint-Esprit University. He joined the Paris office of Renzo Piano Building Workshop in 1988 and has worked as lead architect on a variety of projects including the Kanak Cultural Center in New Caledonia and the Potsdamer Platz project in Berlin. In 1997, he became a partner at RPBW. He was partner-in-charge of the new Il Sole 24 Ore headquarters in Milan and is now in charge of the Los Angeles County Museum of Art expansion project and phase one of ColumbiaÕs proposed Manhattanville urban academic community."),
     ),
     
     array(
-      'title' => 'Antoine Chaaya',
+      'title' => filter_xss('Antoine Chaaya'),
       'language' => LANGUAGE_NONE,
       'type' => 'team',
       'field_team' => 'Design Team',
+      'photo' => 'chaaya.jpg',
       'field_organization' => 'Renzo Piano Building Workshop',      
       'field_profile' => filter_xss("<p>Renzo Piano is the founder of Renzo Piano Building Workshop, an architectural firm with offices 
                           in Paris and Genoa. Before starting RPBW in 1993, he founded the Piano & Rogers agency with Richard
@@ -141,9 +143,10 @@ function mville_site_content() {
 
 
     array(
-      'title' => 'Anthony Vacchione',
+      'title' => filter_xss('Anthony Vacchione'),
       'language' => LANGUAGE_NONE,
       'type' => 'team',
+      'photo' => 'vacchione.jpg',
       'field_team' => 'Design Team',
       'field_profile' => filter_xss("<p>Vacchione joined SOM in 1978 and was named a Managing Partner in 1999. In addition to being involved
                          in ongoing strategic campus planning for Columbia University since the SOM's work on the East Campus 
@@ -156,9 +159,10 @@ function mville_site_content() {
     ),
 
     array(
-      'title' => 'James Corner',
+      'title' => filter_xss('James Corner'),
       'language' => LANGUAGE_NONE,
       'type' => 'team',
+      'photo' => 'corner.jpg',
       'field_team' => 'Design Team',
       'field_profile' => filter_xss("<p>James Corner is a registered landscape architect and urban designer, and director of Field Operations,
                           an internationally recognized landscape architecture and urban design practice based in New York City.
@@ -175,9 +179,10 @@ function mville_site_content() {
     ),
     
     array(
-      'title' => 'La-Verna Fountain',
+      'title' => filter_xss('La-Verna Fountain'),
       'language' => LANGUAGE_NONE,
       'type' => 'team',
+      'photo' => 'fountain.jpg',
       'field_profile' => filter_xss("<p>La-Verna Fountain currently serves as the Vice President for Construction Business Services 
                           and Communications at Columbia University in the City of New York. As the Vice President, 
                           Ms. Fountain will help lead our outreach and communications efforts regarding construction 
@@ -198,33 +203,35 @@ function mville_site_content() {
     ),
         
     array(
-      'title' => 'Maxine F. Griffith',
+      'title' => filter_xss('Maxine F. Griffith'),
       'language' => LANGUAGE_NONE,
       'type' => 'team',
+      'photo' => 'griffith.jpg',
       'field_team' => 'Columbia Project Team',      
       'field_profile' => filter_xss("
                          <p>Maxine Griffith is Executive Vice President for Government and Community Affairs at Columbia and Special Advisor for Campus Planning. She is responsible for the oversight and coordination of the University's collaborations with government at the local, state, and federal levels, as well as the strengthening of Columbia's many partnerships with local organizations.</p>
                          <p>From 2000 to 2005, Griffith served as Executive Director of the Philadelphia City Planning Commission and as that city's Secretary (Deputy Mayor) for Strategic Planning. Previously, Griffith served in the Clinton administration at the U.S. Department of Housing and Urban Development as Regional Representative for New York and New Jersey and as Assistant Deputy Secretary. From 1988 to 1996, she was Principal of Griffith Planning & Design, a firm providing planning, urban design, and development services.</p>
                          <p>Griffith has also served on the New York City Planning Commission and currently sits on the boards of the Architectural League of New York, the Regional Plan Association, and Seeds, an organization building schools and libraries in West Africa.</p>
-                         <p>Griffith was born in Harlem, graduated cum laude from Hunter College, and holds a master's degree in architecture from the University of California, Berkeley. She has taught city planning and urban design at Columbia, New York University, and the University of Pennsylvania and is an accredited member of the American Institute of Certified Planners.
-                         </p>
+                         <p>Griffith was born in Harlem, graduated cum laude from Hunter College, and holds a master's degree in architecture from the University of California, Berkeley. She has taught city planning and urban design at Columbia, New York University, and the University of Pennsylvania and is an accredited member of the American Institute of Certified Planners.</p>
       "),
       'field_organization' => 'Office of Government and Community Affairs',
     ),
     
     array(
-      'title' => 'Joe Ienuso',
+      'title' => filter_xss('Joe Ienuso'),
       'language' => LANGUAGE_NONE,
       'type' => 'team',
+      'photo' => 'ienuso.jpg',
       'field_team' => 'Columbia Project Team',      
       'field_profile' => filter_xss("<p>Ienuso is the Executive Vice President for CU Facilities, having joined Columbia in 1989 and having held a number of senior administrative roles in Admissions, Financial Aid, Student Services, and Facilities Management. As part of the Facilities Management Executive Team since 2001, he well understands the Facilities agenda and is currently responsible for facilities operations, security, design and construction, and planning services for the Morningside Heights campus. Ienuso holds a B.S. and an M.S. from St. John's University and an M.B.A. from Columbia Business School.</p>"),
       'field_organization' => 'Columbia University, Facilities',
     ),	
     
     array(
-      'title' => 'Victoria Mason-Ailey',
+      'title' => filter_xss('Victoria Mason-Ailey'),
       'language' => LANGUAGE_NONE,
       'type' => 'team',
+      'photo' => 'mason-ailey.jpg',
       'field_team' => 'Columbia Project Team',      
       'field_profile' => filter_xss("
                          <p>Mason-Ailey is the Assistant Vice President for Planning and Project Coordination within the Office of
@@ -243,9 +250,10 @@ function mville_site_content() {
     ),
     
     array(
-      'title' => 'Philip Pitruzzello',
+      'title' => filter_xss('Philip Pitruzzello'),
       'language' => LANGUAGE_NONE,
       'type' => 'team',
+      'photo' => 'pitruzzello.jpg',
       'field_team' => 'Columbia Project Team',      
       'field_profile' => filter_xss("
                          <p>Pitruzzello is the Vice President for Manhattanville Development. He serves as the Columbia University Facilities point person on all aspects of the development, design and construction of the University's 6.8 million sq. ft. Manhattanville in West Harlem campus expansion.</p>
@@ -257,9 +265,10 @@ function mville_site_content() {
     ),
     
     array(
-      'title' => 'Marcelo Velez',
+      'title' => filter_xss('Marcelo Velez'),
       'language' => LANGUAGE_NONE,
       'type' => 'team',
+      'photo' => 'velez.jpg',
       'field_team' => 'Columbia Project Team',      
       'field_profile' => filter_xss("
 	                     <p>Marcelo Velez is Associate Vice President for Manhattanville Capital Construction in Columbia University Facilities. He is a professional engineer with almost 20 years of diverse construction project management experience. Velez has a record of accomplishments in managing large and complex construction projects through the planning, design, and construction phases. Over the years, he has managed, supervised, and otherwise presided over $1 billion worth of capital construction. His recent projects include the Columbia University School of Social Work, 2700 Broadway, the School at 110th Street, Lenfest Hall, Broadway Residence, and the renovation of River Hall.</p>
@@ -268,7 +277,8 @@ function mville_site_content() {
     ),	
 
     array(
-      'title' => 'Geoffrey R. Wiener Jr.',
+      'title' => filter_xss('Geoffrey R. Wiener Jr.'),
+      'photo' => 'wiener.jpg',
       'language' => LANGUAGE_NONE,
       'type' => 'team',
       'field_team' => 'Columbia Project Team',      
@@ -373,20 +383,17 @@ function mville_site_content() {
         $node->field_team['und'][0] = array('value' => $nodo['field_team']);
       }
 
-      /**
-      $file_path = drupal_get_path('profile', 'manhattanville_profile') . '/images/' . $nodo['photo'];
-      
-      $file = (object)array(
-        'uid' => 1,
-        'uri' => $file_path,
-        'filemime' => file_get_mimetype($file_path),
-        'status' => 1
-      );
-
-      $file = file_copy($file, 'public://', FILE_EXISTS_REPLACE);
-	  
-      $node->field_photo['und'][0] = (array)$file;
-	  */
+      if (array_key_exists('photo', $nodo)) {
+        $file_path = drupal_get_path('profile', 'manhattanville_profile') . '/images/' . $nodo['photo'];
+        $file = (object)array(
+          'uid' => 1,
+          'uri' => $file_path,
+          'filemime' => file_get_mimetype($file_path),
+          'status' => 1
+        );
+        $file = file_copy($file, 'public://', FILE_EXISTS_REPLACE);
+        $node->field_photo['und'][0] = (array)$file;
+      }
 	  
     }
 	
