@@ -4,7 +4,7 @@ api = 2
 projects[drupal][version] = "7.x"
 
 ; Modules
-projects[views_slideshow][version] = "7.x-3.0"
+projects[views_slideshow][version] = "3.0"
 
 ; Libraries
 libraries[jquery_cycle][download][type] = "file"

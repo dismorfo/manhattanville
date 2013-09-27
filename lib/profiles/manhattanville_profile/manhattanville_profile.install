@@ -369,6 +369,7 @@ function mville_site_content() {
 
   foreach($research_initiatives as $ri) {
     $ri['type'] = 'research_initiative';
+    $ri['language'] = LANGUAGE_NONE;
     array_push($nodes, $ri);
   }
 
