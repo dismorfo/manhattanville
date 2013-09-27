@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Research Initiative feature.
- */
-
-include_once 'research_initiative.features.inc';

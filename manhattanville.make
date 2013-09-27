@@ -78,3 +78,7 @@ projects[tao][version] = "3.0-beta4"
  projects[construction_update_features][download][type] = "local"
  projects[construction_update_features][download][source] = lib/modules/construction_update_features
  projects[construction_update_features][type] = "module"
+
+ projects[construction_update_features][download][type] = "local"
+ projects[construction_update_features][download][source] = lib/modules/research_initiatives
+ projects[construction_update_features][type] = "module"
