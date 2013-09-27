@@ -283,3 +283,21 @@ border-style: solid;
   padding: 9px 14px;
   background-color: white;
 }
+
+.view-columbia-project-team .views-field-field-profile {
+  position:absolute; 
+  left:-10000px; 
+  top:auto; 
+  width:1px; 
+  height:1px; 
+  overflow:hidden;
+}
+
+.view-design-team .views-field-field-profile {
+  position:absolute; 
+  left:-10000px; 
+  top:auto; 
+  width:1px; 
+  height:1px; 
+  overflow:hidden;
+}

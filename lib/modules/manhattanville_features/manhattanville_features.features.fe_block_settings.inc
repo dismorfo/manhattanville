@@ -21,16 +21,16 @@ function manhattanville_features_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'rubik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'rubik',
-        'weight' => 0,
-      ),
       'manhattanville' => array(
         'region' => '',
         'status' => 0,
         'theme' => 'manhattanville',
+        'weight' => 0,
+      ),
+      'rubik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'rubik',
         'weight' => 0,
       ),
     ),
@@ -47,16 +47,16 @@ function manhattanville_features_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'rubik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'rubik',
-        'weight' => 0,
-      ),
       'manhattanville' => array(
         'region' => '',
         'status' => 0,
         'theme' => 'manhattanville',
+        'weight' => 0,
+      ),
+      'rubik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'rubik',
         'weight' => 0,
       ),
     ),
@@ -73,16 +73,16 @@ function manhattanville_features_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'rubik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'rubik',
-        'weight' => 0,
-      ),
       'manhattanville' => array(
         'region' => '',
         'status' => 0,
         'theme' => 'manhattanville',
+        'weight' => 0,
+      ),
+      'rubik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'rubik',
         'weight' => 0,
       ),
     ),
@@ -99,17 +99,17 @@ function manhattanville_features_default_fe_block_settings() {
     'pages' => 'team',
     'roles' => array(),
     'themes' => array(
-      'rubik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'rubik',
-        'weight' => 0,
-      ),
       'manhattanville' => array(
         'region' => 'content',
         'status' => 1,
         'theme' => 'manhattanville',
         'weight' => -11,
+      ),
+      'rubik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'rubik',
+        'weight' => 0,
       ),
     ),
     'title' => '',
@@ -125,17 +125,17 @@ function manhattanville_features_default_fe_block_settings() {
     'pages' => 'construction',
     'roles' => array(),
     'themes' => array(
-      'rubik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'rubik',
-        'weight' => 0,
-      ),
       'manhattanville' => array(
         'region' => 'content',
         'status' => 1,
         'theme' => 'manhattanville',
         'weight' => -9,
+      ),
+      'rubik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'rubik',
+        'weight' => 0,
       ),
     ),
     'title' => '',
@@ -151,47 +151,21 @@ function manhattanville_features_default_fe_block_settings() {
     'pages' => 'team',
     'roles' => array(),
     'themes' => array(
-      'rubik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'rubik',
-        'weight' => 0,
-      ),
       'manhattanville' => array(
         'region' => 'content',
         'status' => 1,
         'theme' => 'manhattanville',
         'weight' => -10,
       ),
-    ),
-    'title' => '',
-    'visibility' => 1,
-  );
-
-  $export['views-stories-block'] = array(
-    'cache' => -1,
-    'custom' => 0,
-    'delta' => 'stories-block',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
       'rubik' => array(
         'region' => '',
         'status' => 0,
         'theme' => 'rubik',
         'weight' => 0,
       ),
-      'manhattanville' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'manhattanville',
-        'weight' => 0,
-      ),
     ),
     'title' => '',
-    'visibility' => 0,
+    'visibility' => 1,
   );
 
   $export['views-news_items-block'] = array(
@@ -209,8 +183,41 @@ function manhattanville_features_default_fe_block_settings() {
         'theme' => 'manhattanville',
         'weight' => 0,
       ),
+      'rubik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'rubik',
+        'weight' => 0,
+      ),
     ),
+    'title' => '',
     'visibility' => 1,
+  );
+
+  $export['views-stories-block'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'delta' => 'stories-block',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'manhattanville' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'manhattanville',
+        'weight' => 0,
+      ),
+      'rubik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'rubik',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
   );
 
   return $export;
