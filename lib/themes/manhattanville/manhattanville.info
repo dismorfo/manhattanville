@@ -4,7 +4,10 @@ package = manhattanville
 version = VERSION
 core = 7.x
 stylesheets[all][] = css/base.css
+stylesheets[all][] = js/colorbox.css
 scripts[] = js/manhattanville.js
+scripts[] = js/jquery.colorbox-min.js
+
 
 regions[page_first] = Page top
 regions[page_brand] = Page brand
