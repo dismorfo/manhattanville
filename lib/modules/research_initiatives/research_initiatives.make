@@ -7,5 +7,5 @@ projects[drupal][version] = "7.x"
 projects[views_slideshow][version] = "3.0"
 
 ; Libraries
-libraries[jquery_cycle][download][type] = "file"
-libraries[jquery_cycle][download][url] = "http://malsup.github.io/min/jquery.cycle2.min.js"
+libraries[jquery.cycle][download][type] = "file"
+libraries[jquery.cycle][download][url] = "http://malsup.github.io/jquery.cycle.all.js"
