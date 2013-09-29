@@ -16,51 +16,57 @@
       font-size: 11px;
       color: #000;
     }
-    
+
       .main .top .right form ::-webkit-input-placeholder { /* WebKit browsers */
         color: #000;
       }
-    
+
       .main .top .right form :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
         color: #000;
       }
-    
+
       .main .top .right form ::-moz-placeholder { /* Mozilla Firefox 19+ */
         color: #000;
       }
-    
+
       .main .top .right form :-ms-input-placeholder { /* Internet Explorer 10+ */
         color: #000;
       }
-    
+
       .main .top .right form .wrapper {
-        position: relative;
-        background: url('../img/search_bg_left.jpg') no-repeat 0 0;
+          background-color: #163e75;
       }
-      
-      .main .top .right form .wrapper .wrapper-inner {
-        background: url('../img/search_bg_right.jpg') no-repeat right top;
-      }
-      
+
+      /* .main .top .right form .wrapper { */
+      /*   position: relative; */
+      /*   background: url('../img/search_bg_left.jpg') no-repeat 0 0; */
+      /* } */
+
+      /* .main .top .right form .wrapper .wrapper-inner { */
+      /*   background: url('../img/search_bg_right.jpg') no-repeat right top; */
+      /* } */
+
       .main .top .right form .wrapper .wrapper-inner .searchbox {
-        position:absolute; 
-        left:-10000px; 
-        top:auto; 
-        width:1px; 
-        height:1px; 
+        position:absolute;
+        left:-10000px;
+        top:auto;
+        width:1px;
+        height:1px;
         overflow:hidden;
       }
-      
+
       .main .top .right form .wrapper .wrapper-inner #cu-search-box {
-        background: none;
+        /* background: none; */
         width: 220px;
         padding: 4px 30px 7px 10px;
         border: none;
         display: inline;
         margin: 0 0 0.5em;
-        font-size: 1em;      
+        font-size: 1em;
+        box-shadow: 3px 3px 0px #000000;
       }
-      
+
+
       .main .top .right form .wrapper .wrapper-inner button {
         position: absolute;
         right: 12px;
@@ -76,7 +82,7 @@
         display: block;
         padding: 0;
       }
-    
+
       .main .top .left {
         position: relative;
 	    left: 20px;
@@ -102,7 +108,7 @@
         width: 702px;
         display: table;
       }
-  
+
   .main .top .columbia .left {
     background-image: url("../img/columbia.png");
     background-position: 0px;
@@ -114,5 +120,5 @@
     background-color: transparent;
     height: 15px;
     width: 300px;
-    display: table;    
+    display: table;
   }
