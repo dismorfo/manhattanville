@@ -25,8 +25,6 @@ Get your webserver running and pointed at the root directory of the distribution
 
 	builds/manhattanville
 
-Edit the database connection settings in sites/default/settings.php.
-
 Now run the installation process using the distributed profile
 
 	drush site-install manhattanville_profile --site-name=Manhattanville --db-url=mysql://USER:PASSWORD@127.0.0.1:PORT/DB_NAME
