@@ -54,6 +54,7 @@ projects[token][version] = "1.5"
 
 projects[views][version] = "3.7"
 
+projects[transliteration][version] = "3.1"
 
 ; Themes
 

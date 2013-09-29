@@ -42,6 +42,7 @@ dependencies[] = styleguide
 dependencies[] = taxonomy
 dependencies[] = text
 dependencies[] = toolbar
+dependencies[] = transliteration
 dependencies[] = update
 dependencies[] = views
 dependencies[] = views_ui
