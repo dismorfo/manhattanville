@@ -3,11 +3,11 @@
  * @file
  * Module file for block_manhattanville.
  */
- 
+
  function block_manhattanville_node_presave($node) {
    // dpm($node);
  }
- 	
+
 /**
  * Implements hook_block_info().
  *
@@ -149,7 +149,7 @@ function block_manhattanville_contents($which_block) {
                           <input type="hidden" name="client" value="columbia">
                           <input type="hidden" name="site" value="Columbia">
                           <input type="hidden" name="output" value="xml_no_dtd">
-                          <input id="cu-search-box" placeholder="' . t('Search for people, departments & websites') . '" type="text" maxlength="2033" value="" name="q" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+                          <input id="cu-search-box" placeholder="' . t('Search for people, departments & websites') . '" type="text" maxlength="2033" value="" name="q" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" class="pure-input-rounded">
                           <button id="cu-search-submit" type="submit">' . t('Submit') . '</button>
                         </div>
                       </div>
