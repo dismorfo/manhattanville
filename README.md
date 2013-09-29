@@ -12,7 +12,7 @@ Install make_local
 
 Build the drupal distribution, e.g.
 
-	drush make --prepare-install -tar manhattanville.make builds/mville--$(date +"%Y_%m_%d_%H_%M_%S")
+	drush make --prepare-install manhattanville.make builds/mville--$(date +"%Y_%m_%d_%H_%M_%S")
 
 ...or,
 
