@@ -3,10 +3,6 @@
  * @file
  * Module file for block_manhattanville.
  */
- 
- function block_manhattanville_node_presave($node) {
-   // dpm($node);
- }
  	
 /**
  * Implements hook_block_info().
@@ -72,6 +68,21 @@ function block_manhattanville_block_view($delta = '') {
 
   }
   return $block;
+}
+
+function block_manhattanville_form_contact_validate(&$form, &$form_state) {
+  $validate = $form_state['values']['field_email'][$form_state['node']->language][0]['email'];
+  if (isset($validate) && empty($form_state['node']->nid)) {
+	$result = db_query('SELECT field_email_email as email FROM {field_data_field_email} n WHERE field_email_email = :email', array(':email' => $validate));
+	if ($result->rowCount() > 0) {
+      $record = $result->fetchObject();
+	  form_set_error($form_state['values']['field_email'], t('@email already register for construction updates.', array('@email' => $record->email)));
+	}
+  }
+}
+
+function block_manhattanville_form_contact_node_form_alter(&$form, &$form_state, $form_id) {
+   $form['#validate'][] = 'block_manhattanville_form_contact_validate';
 }
 
 /**
