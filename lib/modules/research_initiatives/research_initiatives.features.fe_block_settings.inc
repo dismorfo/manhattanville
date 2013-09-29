@@ -22,10 +22,10 @@ function research_initiatives_default_fe_block_settings() {
     'roles' => array(),
     'themes' => array(
       'manhattanville' => array(
-        'region' => 'content',
+        'region' => 'sidebar_first',
         'status' => 1,
         'theme' => 'manhattanville',
-        'weight' => 0,
+        'weight' => -11,
       ),
       'rubik' => array(
         'region' => '',
