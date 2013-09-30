@@ -15,7 +15,6 @@
 }
 
 .page .pure-u-3-4 .vertical-spacer {
-    height: 100px;
     border-right: 1px solid #163e75;
     float: left;
 }
@@ -34,16 +33,14 @@
 .page .body-content-inner {
   padding-left: 2.5em;
   padding-right: 2.5em;
-  /* border-left-color: #dfe8f2; */
-  /* border-left-style: solid; */
-  /* border-left-width: 1px; */
-  /* margin-bottom: 2.5em; */
+  padding-top: 5px;
 }
   .page .body h2 {
     text-transform: uppercase;
     color: #163e75;
     margin-top: 0;
   }
+
 
 .field-name-body .field-items .field-item :first-child {
   margin-top: 0;
@@ -97,6 +94,11 @@
   height:1px;
   overflow:hidden;
 }
+
+.page .secondary ul.menu li.first {
+    padding-top: 0px;
+}
+
 
 .main.has_sec_content .page .body {
   max-width: 100%;
