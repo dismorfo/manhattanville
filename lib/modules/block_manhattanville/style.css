@@ -10,9 +10,10 @@
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-/* .block .node-contact-form label { */
-/*   display: inline-block; */
-/* } */
+.block .node-contact-form label {
+  /* display: inline-block; */
+  text-transform: uppercase;
+}
 
 .block .node-contact-form label span.form-required {
   display: none;

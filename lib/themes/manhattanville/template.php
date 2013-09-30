@@ -85,6 +85,7 @@ function manhattanville_theme() {
 
 function manhattanville_preprocess_textfield(&$vars) {
   $vars['element']['#attributes']['class'][] = 'pure-input-1';
+  $vars['element']['#attributes']['class'][] = 'pure-input-rounded';
   $vars['element']['#size'] = 30;
   $vars['element']['#attributes']['required'] = array('true');
 }
