@@ -10,13 +10,16 @@
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-.block .node-contact-form label {
-  display: inline-block;
+/* .block .node-contact-form label { */
+/*   display: inline-block; */
+/* } */
+
+.block .node-contact-form label span.form-required {
+  display: none;
 }
 
 .block .node-contact-form .form-text  {
   display: inline-block;
-  width: 80%;
 }
 
 .block .node-contact-form .form-actions {
@@ -26,7 +29,7 @@
 
 .block .node-contact-form .form-actions  input {
   font-size: 100%;
-  padding: .5em 1.5em;
+  /* padding: .5em 1.5em; */
   color: #444;
   color: rgba(0,0,0,.8);
   border: 1px solid #999;

@@ -6,14 +6,14 @@
 function manhattanville_preprocess_page(&$vars) {
 
   // print var_dump($vars);
-  
+
   // this will fail because we need to set jQuery 1.8 at jQuery update module; right now is set to 1.5
   //drupal_add_js('//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js', array(
     //'type' => 'external',
     //'scope' => 'header',
     //'group' => JS_THEME,
   //));
-  
+
   $cssConf = array(
     'group' => CSS_THEME,
     'type' => 'inline',
@@ -37,7 +37,7 @@ function manhattanville_preprocess_page(&$vars) {
 	}
   }
 
-  if ( isset($vars['node']) && $vars['node']->title == 'Home') { #sorry; can we make this a in-code-block ? 
+  if ( isset($vars['node']) && $vars['node']->title == 'Home') { #sorry; can we make this a in-code-block ?
     $vars['livable_city_logo'] = base_path() . path_to_theme() . '/img/livable_city_logo.png';
   }
 
@@ -78,4 +78,36 @@ function manhattanville_preprocess_page(&$vars) {
 function manhattanville_field_get_first_item($entity_type, $entity, $field_name, $index = 0, $langcode = NULL) {
   $field = field_get_items($entity_type, $entity, $field_name, $langcode);
   return $field[$index];
+}
+
+
+function manhattanville_theme() {
+  return array(
+    'contact_node_form' => array(
+      'render element' => 'form',
+      'template' => 'contact-node-form',
+      'path' => drupal_get_path('theme', 'manhattanville'),
+    ),
+  );
+}
+
+
+function manhattanville_preprocess_textfield(&$vars) {
+  $vars['element']['#attributes']['class'][] = 'pure-input-1';
+  $vars['element']['#size'] = 30;
+  $vars['element']['#attributes']['required'] = array('true');
+}
+
+
+function manhattanville_form_alter(&$form, &$form_state, $form_id) {
+
+  $form['#attributes']['class'][] = 'pure-form';
+
+  switch ($form_id) {
+    case 'contact_node_form':
+      $form['#attributes']['class'][] = 'pure-form-stacked';
+      $form['actions']['submit']['#value'] = t('Submit');
+
+      break;
+  }
 }
