@@ -200,12 +200,12 @@ function manhattanville_features_default_fe_block_settings() {
     'delta' => 'stories-block',
     'module' => 'views',
     'node_types' => array(),
-    'pages' => '',
+    'pages' => 'stories',
     'roles' => array(),
     'themes' => array(
       'manhattanville' => array(
-        'region' => '',
-        'status' => 0,
+        'region' => 'content',
+        'status' => 1,
         'theme' => 'manhattanville',
         'weight' => 0,
       ),
@@ -217,7 +217,7 @@ function manhattanville_features_default_fe_block_settings() {
       ),
     ),
     'title' => '',
-    'visibility' => 0,
+    'visibility' => 1,
   );
 
   return $export;
