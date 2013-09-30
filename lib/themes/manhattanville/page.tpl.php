@@ -76,7 +76,7 @@
    			</div>
    <?php if (isset($livable_city_logo)) : ?>
 	   <div id="livable-city-logo">
-   		 <img src="<?php print $livable_city_logo; ?>" />
+   		 <?php print render($livable_city_logo); ?>
    	 </div>
    <?php endif; ?>
  			</div>

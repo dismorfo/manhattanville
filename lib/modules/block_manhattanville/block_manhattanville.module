@@ -25,6 +25,10 @@ function block_manhattanville_block_info() {
   $blocks['mville_social_media_links'] = array(
     'info' => t('Social Media Links'),
   );
+  
+  $blocks['mville_livable_city'] = array(
+    'info' => t('Livable city'),
+  );  
 
   return $blocks;
 }
@@ -59,6 +63,9 @@ function block_manhattanville_block_view($delta = '') {
       $block['content'] = block_manhattanville_contents($delta);
       break;
 
+    case 'mville_livable_city':
+      $block['content'] = block_manhattanville_contents($delta);
+      break;
 
   }
   return $block;
@@ -184,5 +191,10 @@ function block_manhattanville_contents($which_block) {
 
       return array('#markup' => $links);
       break;
+
+    case 'mville_livable_city' :
+      return array('#markup' => '<img src="' . drupal_get_path('module', 'block_manhattanville') . '/img/livable_city_logo.png"/>');
+      break;
+
   }
 }
