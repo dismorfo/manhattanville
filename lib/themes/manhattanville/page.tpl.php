@@ -30,14 +30,14 @@
     </div>
   </div>
   <div class="pure-g">
-  	<div class="pure-u-1">
+    <div class="pure-u-1">
       <?php if ($tabs): ?>
-          <?php print render($tabs); ?>
+        <?php print render($tabs); ?>
       <?php endif; ?>
       <?php print render($primary_local_tasks); ?>
       <div id="console" class="clearfix">
         <?php if ($messages): ?>
-          <?php print $messages; ?></div>
+          <?php print $messages; ?>
         <?php endif; ?>
       </div>
       <?php if ($page['help']): ?>
@@ -48,7 +48,7 @@
       <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
-   </div>
+    </div>
   </div>
   <div class="pure-g page">
    <?php if (!$page['sidebar_first']) : ?>
@@ -56,10 +56,8 @@
       <div class="pure-menu pure-menu-open"><?php print render($active_menu_tree); ?></div>
 	    </div>
    <?php endif; ?>
-
-<?php $body_class = (!$page['sidebar_first'] ? 'pure-u-3-4' : 'pure-u-1-2'); ?>
-
-    <div class="<?php print $body_class; ?> body-content">
+   <?php $body_class = (!$page['sidebar_first'] ? 'pure-u-3-4' : 'pure-u-1-2'); ?>
+   <div class="<?php print $body_class; ?> body-content">
    <?php if (!$page['sidebar_first']): ?>
    		<div class="vertical-spacer"></div>
    <?php endif; ?>

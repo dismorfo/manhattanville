@@ -110,7 +110,20 @@ function manhattanville_features_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__story';
-  $strongarm->value = array();
+  $strongarm->value = array(
+    'view_modes' => array(),
+    'extra_fields' => array(
+      'form' => array(
+        'title' => array(
+          'weight' => '-5',
+        ),
+        'path' => array(
+          'weight' => '30',
+        ),
+      ),
+      'display' => array(),
+    ),
+  );
   $export['field_bundle_settings_node__story'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -174,7 +187,12 @@ function manhattanville_features_strongarm() {
       'family' => 'Dosis',
       'variants' => array(
         200 => '200',
+        300 => '300',
         'regular' => 'regular',
+        500 => '500',
+        600 => '600',
+        700 => '700',
+        800 => '800',
       ),
       'subsets' => array(
         'latin-ext' => 'latin-ext',
@@ -183,6 +201,15 @@ function manhattanville_features_strongarm() {
     ),
     'Oswald' => array(
       'family' => 'Oswald',
+      'variants' => array(
+        300 => '300',
+        'regular' => 'regular',
+        700 => '700',
+      ),
+      'subsets' => array(
+        'latin-ext' => 'latin-ext',
+        'latin' => 0,
+      ),
     ),
   );
   $export['google_fonts_enabled_fonts'] = $strongarm;

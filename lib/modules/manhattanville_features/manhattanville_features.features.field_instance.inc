@@ -443,46 +443,6 @@ function manhattanville_features_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-story-field_tags'
-  $field_instances['node-story-field_tags'] = array(
-    'bundle' => 'story',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Enter a comma-separated list of words to describe your content.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 10,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 10,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_tags',
-    'label' => 'Tags',
-    'required' => FALSE,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'taxonomy',
-      'settings' => array(
-        'autocomplete_path' => 'taxonomy/autocomplete',
-        'size' => 60,
-      ),
-      'type' => 'taxonomy_autocomplete',
-      'weight' => -4,
-    ),
-  );
-
   // Exported field_instance: 'node-team-field_name'
   $field_instances['node-team-field_name'] = array(
     'bundle' => 'team',
@@ -694,14 +654,12 @@ function manhattanville_features_field_default_field_instances() {
   t('Banner');
   t('Body');
   t('Date');
-  t('Enter a comma-separated list of words to describe your content.');
   t('Image');
   t('Media');
   t('Name');
   t('Organization');
   t('Photo');
   t('Profile');
-  t('Tags');
   t('Team');
   t('Update');
   t('Upload an image to go with this article.');
