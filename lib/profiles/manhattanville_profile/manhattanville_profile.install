@@ -83,6 +83,7 @@ function mville_site_content() {
       'language' => LANGUAGE_NONE,
       'type' => 'page',
       'bodytext' => manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_video() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum(),
+      'banner' => 'community_banner.jpg',
     ),
     array(
       'title' => 'Planning and Design',
