@@ -5,15 +5,6 @@
  */
 function manhattanville_preprocess_page(&$vars) {
 
-  // print var_dump($vars);
-
-  // this will fail because we need to set jQuery 1.8 at jQuery update module; right now is set to 1.5
-  //drupal_add_js('//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js', array(
-    //'type' => 'external',
-    //'scope' => 'header',
-    //'group' => JS_THEME,
-  //));
-
   $cssConf = array(
     'group' => CSS_THEME,
     'type' => 'inline',
@@ -37,8 +28,8 @@ function manhattanville_preprocess_page(&$vars) {
 	}
   }
 
-  if ( isset($vars['node']) && $vars['node']->title == 'Home') { #sorry; can we make this a in-code-block ?
-    $vars['livable_city_logo'] = base_path() . path_to_theme() . '/img/livable_city_logo.png';
+  if ( isset($vars['node']) && drupal_is_front_page()) {
+    $vars['livable_city_logo'] = module_invoke('block_manhattanville', 'block_view', 'mville_livable_city');
   }
 
   drupal_add_css('.banner {background-image: url("' . $file_uri . '");}', $cssConf);
