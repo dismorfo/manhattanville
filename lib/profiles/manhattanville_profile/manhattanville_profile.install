@@ -71,7 +71,7 @@ function mville_site_content() {
       'title' => 'Team',
       'language' => LANGUAGE_NONE,
       'type' => 'page',
-      'bodytext' => xss_filter('<p>The planning, design and construction of the Manhattanville campus are being managed by a University-led planning team. Four preeminent architectural and planning firms are planning and design the campus: Renzo Piano Building Workshop; Skidmore, Owings & Merrill; Diller Scofidio + Renfro; and Field Operations. Our construction partners are Lend Lease and McKissack & McKissack.</p>'),
+      'bodytext' => filter_xss('<p>The planning, design and construction of the Manhattanville campus are being managed by a University-led planning team. Four preeminent architectural and planning firms are planning and design the campus: Renzo Piano Building Workshop; Skidmore, Owings & Merrill; Diller Scofidio + Renfro; and Field Operations. Our construction partners are Lend Lease and McKissack & McKissack.</p>'),
     ),
     array(
       'title' => 'Academics',
