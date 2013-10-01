@@ -65,6 +65,7 @@ function mville_site_content() {
                     <p>A globally respected academic center, Columbia is also a vital local institution, committed to the economic, intellectual, social and cultural vitality of our neighborhoods and New York City. In that spirit, together with our West Harlem neighbors, elected representatives and civic leaders, we have developed a plan for a mixed-use academic center that provides a long-term future of shared opportunity.</p>
                     <iframe width="560" height="315" src="http://www.youtube.com/embed/CRdncAfENpY" frameborder="0" allowfullscreen></iframe>
                     <p>The Jerome L. Greene Science Center, home to the Mortimer B. Zuckerman Mind, Brain, Behavior Institute, will open in 2015.</p>',
+      'banner' => 'construction.jpg',
     ),
     array(
       'title' => 'Team',
@@ -311,13 +312,13 @@ function mville_site_content() {
       'type' => 'news',
       'body' => manhattanville_profile_generate_lorum_ipsum(),
     );
-    
+
     $construction_update = array(
       'title' => 'Sample Construction Update'  . $i,
       'type' => 'construction_updates',
       'body' => manhattanville_profile_generate_lorum_ipsum(),
     );
-    
+
     $story_item = array(
       'title' => 'Sample story item' . $i,
       'type' => 'story',
@@ -325,9 +326,9 @@ function mville_site_content() {
     );
 
     array_push($nodes, $news_item);
-    
+
     array_push($nodes, $construction_update);
-	
+
 	array_push($nodes, $story_item);
 
     $i = $i + 1;
@@ -420,7 +421,7 @@ function mville_site_content() {
     node_object_prepare($node);
 
     $node->title = $nodo['title'];
-	
+
 	switch ($node->type) {
       case 'page':
         $node->body['und'][0]['format'] = 'full_html';
@@ -437,7 +438,7 @@ function mville_site_content() {
         }
 
         break;
-		
+
 	    case 'research_initiative':
             if (array_key_exists('bodytext', $nodo)) {
               $node->body['und'][0]['value'] = $nodo['bodytext'];
@@ -447,11 +448,11 @@ function mville_site_content() {
               $file = mville_add_file($file_path);
               $node->field_image['und'][0] = (array)$file;
             }
-			
+
 		  break;
-        
+
         case 'team':
-			
+
            $node->field_name['und'][0]['value'] = $nodo['title'];
 
 	       if (array_key_exists('field_profile', $nodo)) {
@@ -467,23 +468,23 @@ function mville_site_content() {
            }
 
            if (array_key_exists('photo', $nodo)) {
-           	
+
               $file_path = drupal_get_path('profile', 'manhattanville_profile') . '/images/' . $nodo['photo'];
-			   
+
               $file = (object)array(
                 'uid' => 1,
                 'uri' => $file_path,
                 'filemime' => file_get_mimetype($file_path),
                 'status' => 1
               );
-			
+
               $file = file_copy($file, 'public://', FILE_EXISTS_REPLACE);
-			
+
               $node->field_photo['und'][0] = (array)$file;
 
             }
 		  break;
-        
+
         case 'construction_updates':
           if (array_key_exists('body', $nodo)) {
           	$node->body['und'][0]['format'] = 'full_html';
@@ -491,9 +492,9 @@ function mville_site_content() {
             $node->body['und'][0]['value'] = filter_xss($nodo['body']);
           }
 	      $node->field_date[LANGUAGE_NONE][0] = array( 'value' => date('Y-m-d H:i:s', strtotime('now')));
-			
+
           break;
-		
+
 		case 'news':
 		case 'story':
 		  $node->body['und'][0]['format'] = 'full_html';
