@@ -311,7 +311,7 @@ function mville_site_content() {
       'type' => 'news',
       'body' => manhattanville_profile_generate_lorum_ipsum(),
     );
-
+    
     $construction_update = array(
       'title' => 'Sample Construction Update' . $i,
       'type' => 'construction_updates',
@@ -411,79 +411,92 @@ function mville_site_content() {
     node_object_prepare($node);
 
     $node->title = $nodo['title'];
+	
+	switch ($node->type) {
+      case 'page':
+        $node->body['und'][0]['format'] = 'full_html';
 
-    if ($node->type == 'page') {
-      $node->body['und'][0]['format'] = 'full_html';
+        if (array_key_exists('bodytext', $nodo)) {
+          $node->body['und'][0]['summary'] = text_summary($nodo['bodytext']);
+          $node->body['und'][0]['value'] = $nodo['bodytext'];
+        }
 
-      if (array_key_exists('bodytext', $nodo)) {
-        $node->body['und'][0]['summary'] = text_summary($nodo['bodytext']);
-        $node->body['und'][0]['value'] = $nodo['bodytext'];
-      }
+        if (array_key_exists('banner', $nodo)) {
+          $file_path = drupal_get_path('profile', 'manhattanville_profile') . '/images/' . $nodo['banner'];
+          $file = mville_add_file($file_path);
+          $node->field_banner['und'][0] = (array)$file;
+        }
 
-      if (array_key_exists('banner', $nodo)) {
-        $file_path = drupal_get_path('profile', 'manhattanville_profile') . '/images/' . $nodo['banner'];
-        $file = mville_add_file($file_path);
-        $node->field_banner['und'][0] = (array)$file;
-      }
+        break;
+		
+	    case 'research_initiative':
+            if (array_key_exists('bodytext', $nodo)) {
+              $node->body['und'][0]['value'] = $nodo['bodytext'];
+            }
+            if (array_key_exists('image', $nodo)) {
+              $file_path = drupal_get_path('profile', 'manhattanville_profile') . '/research_initiative_images/' . $nodo['image'];
+              $file = mville_add_file($file_path);
+              $node->field_image['und'][0] = (array)$file;
+            }
+			
+		  break;
+        
+        case 'team':
+			
+           $node->field_name['und'][0]['value'] = $nodo['title'];
+
+	       if (array_key_exists('field_profile', $nodo)) {
+	         $node->field_profile['und'][0]['value'] = $nodo['field_profile'];
+	       }
+
+           if (array_key_exists('field_organization', $nodo)) {
+             $node->field_organization['und'][0] = array('value' => $nodo['field_organization']);
+           }
+
+           if (array_key_exists('field_team', $nodo)) {
+             $node->field_team['und'][0] = array('value' => $nodo['field_team']);
+           }
+
+           if (array_key_exists('photo', $nodo)) {
+           	
+              $file_path = drupal_get_path('profile', 'manhattanville_profile') . '/images/' . $nodo['photo'];
+			   
+              $file = (object)array(
+                'uid' => 1,
+                'uri' => $file_path,
+                'filemime' => file_get_mimetype($file_path),
+                'status' => 1
+              );
+			
+              $file = file_copy($file, 'public://', FILE_EXISTS_REPLACE);
+			
+              $node->field_photo['und'][0] = (array)$file;
+
+            }
+		  break;
+        
+        case 'team':
+          if (array_key_exists('body', $nodo)) {
+          	$node->body['und'][0]['format'] = 'full_html';
+            $node->body['und'][0]['summary'] = text_summary(filter_xss($nodo['body']));
+            $node->body['und'][0]['value'] = filter_xss($nodo['body']);
+          }
+	      $node->field_date[LANGUAGE_NONE][0] = array( 'value' => date('Y-m-d H:i:s', strtotime('now')));
+			
+          break;
+		
+		case 'news':
+		case 'story':
+		  $node->body[LANGUAGE_NONE][0]['summary'] = text_summary($nodo['body']);
+          $node->body[LANGUAGE_NONE][0]['value'] = $nodo['body'];
+          break;
     }
-
-    elseif ($node->type == 'research_initiative') {
-      if (array_key_exists('bodytext', $nodo)) {
-        $node->body['und'][0]['value'] = $nodo['bodytext'];
-      }
-
-      if (array_key_exists('image', $nodo)) {
-        $file_path = drupal_get_path('profile', 'manhattanville_profile') . '/research_initiative_images/' . $nodo['image'];
-        $file = mville_add_file($file_path);
-        $node->field_image['und'][0] = (array)$file;
-      }
-    }
-
-    elseif ($node->type == 'team') {
-
-      $node->field_name['und'][0]['value'] = $nodo['title'];
-
-	  if (array_key_exists('field_profile', $nodo)) {
-	    $node->field_profile['und'][0]['value'] = $nodo['field_profile'];
-	  }
-
-      if (array_key_exists('field_organization', $nodo)) {
-        $node->field_organization['und'][0] = array('value' => $nodo['field_organization']);
-      }
-
-      if (array_key_exists('field_team', $nodo)) {
-        $node->field_team['und'][0] = array('value' => $nodo['field_team']);
-      }
-
-      if (array_key_exists('photo', $nodo)) {
-        $file_path = drupal_get_path('profile', 'manhattanville_profile') . '/images/' . $nodo['photo'];
-        $file = (object)array(
-          'uid' => 1,
-          'uri' => $file_path,
-          'filemime' => file_get_mimetype($file_path),
-          'status' => 1
-        );
-        $file = file_copy($file, 'public://', FILE_EXISTS_REPLACE);
-        $node->field_photo['und'][0] = (array)$file;
-      }
-    }
-
-	elseif ($node->type == 'construction_updates') {
-      if (array_key_exists('body', $nodo)) {
-      	$node->body['und'][0]['format'] = 'full_html';
-        $node->body['und'][0]['summary'] = text_summary(filter_xss($nodo['body']));
-        $node->body['und'][0]['value'] = filter_xss($nodo['body']);
-      }
-	  $node->field_date[LANGUAGE_NONE][0] = array(
-        'value' => date('Y-m-d H:i:s', strtotime('now')),
-      );
-	}
 
     $node->uid = 1;
     $node->status = 1;
     $node->promote = 0;
     $node->comment = 0;
-    $node = node_submit($node); // Prepare node for saving
+    $node = node_submit($node);
     node_save($node);
     $node_map[$node->title] = "node/" . $node->nid;
 
