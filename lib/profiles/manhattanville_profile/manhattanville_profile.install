@@ -313,7 +313,7 @@ function mville_site_content() {
     );
     
     $construction_update = array(
-      'title' => 'Sample Construction Update' . $i,
+      'title' => 'Sample Construction Update'  . $i,
       'type' => 'construction_updates',
       'body' => manhattanville_profile_generate_lorum_ipsum(),
     );
@@ -484,7 +484,7 @@ function mville_site_content() {
             }
 		  break;
         
-        case 'team':
+        case 'construction_updates':
           if (array_key_exists('body', $nodo)) {
           	$node->body['und'][0]['format'] = 'full_html';
             $node->body['und'][0]['summary'] = text_summary(filter_xss($nodo['body']));
