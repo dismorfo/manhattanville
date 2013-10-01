@@ -317,9 +317,18 @@ function mville_site_content() {
       'type' => 'construction_updates',
       'body' => manhattanville_profile_generate_lorum_ipsum(),
     );
+    
+    $story_item = array(
+      'title' => 'Sample story item' . $i,
+      'type' => 'story',
+      'body' => manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_video(),
+    );
 
     array_push($nodes, $news_item);
+    
     array_push($nodes, $construction_update);
+	
+	array_push($nodes, $story_item);
 
     $i = $i + 1;
   }
