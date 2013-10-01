@@ -20,6 +20,7 @@ dependencies[] = fe_block
 dependencies[] = features
 dependencies[] = field_ui
 dependencies[] = file
+dependencies[] = file_entity
 dependencies[] = filter
 dependencies[] = footer_message
 dependencies[] = google_fonts
