@@ -226,4 +226,10 @@
   font-size: 85%;
 }
 
+.view-stories {
 
+}
+
+.view-stories .views-row {
+  margin-bottom: 1.5em;
+}
