@@ -103,7 +103,7 @@ function manhattanville_features_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'manhattanville',
-        'weight' => -11,
+        'weight' => -12,
       ),
       'rubik' => array(
         'region' => '',
@@ -129,7 +129,7 @@ function manhattanville_features_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'manhattanville',
-        'weight' => -9,
+        'weight' => -14,
       ),
       'rubik' => array(
         'region' => '',
@@ -155,7 +155,7 @@ function manhattanville_features_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'manhattanville',
-        'weight' => -10,
+        'weight' => -11,
       ),
       'rubik' => array(
         'region' => '',
@@ -207,7 +207,7 @@ function manhattanville_features_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'manhattanville',
-        'weight' => 0,
+        'weight' => -10,
       ),
       'rubik' => array(
         'region' => '',
