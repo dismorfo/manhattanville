@@ -150,3 +150,10 @@
 .region-sidebar-first iframe {
   width: 100%;
 }
+
+div#news-archive-link {
+  width: 10em;
+  float: right;
+  text-align: right;
+  text-transform: uppercase;
+}
