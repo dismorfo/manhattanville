@@ -241,13 +241,13 @@ function manhattanville_features_field_default_field_instances() {
       'settings' => array(
         'allowed_schemes' => array(
           'public' => 'public',
+          'youtube' => 'youtube',
         ),
         'allowed_types' => array(
-          0 => 0,
-          'audio' => 0,
+          'audio' => 'audio',
           'default' => 0,
           'image' => 'image',
-          'video' => 0,
+          'video' => 'video',
         ),
         'progress_indicator' => 'throbber',
       ),
