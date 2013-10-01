@@ -487,6 +487,7 @@ function mville_site_content() {
 		
 		case 'news':
 		case 'story':
+		  $node->body['und'][0]['format'] = 'full_html';
 		  $node->body[LANGUAGE_NONE][0]['summary'] = text_summary($nodo['body']);
           $node->body[LANGUAGE_NONE][0]['value'] = $nodo['body'];
           break;
