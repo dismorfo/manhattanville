@@ -79,8 +79,8 @@
    		 <?php print render($livable_city_logo); ?>
    	 </div>
    <?php endif; ?>
- 			</div>
-   <?php endif; ?>
+  </div>
+  <?php endif; ?>
   </div>
   <div class="pure-g footer">
   	<div class="pure-u-1">

@@ -1,0 +1,12 @@
+div.construction {
+  position:absolute;
+  left:-10000px; 
+  top:auto; 
+  width:1px; 
+  height:1px; 
+  overflow:hidden;
+}
+
+.node h2.title {
+  margin-top: 0;
+}
