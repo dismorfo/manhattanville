@@ -194,12 +194,7 @@
 
 
 #block-views-stories-block h2 {
-  position:absolute; 
-  left:-10000px; 
-  top:auto; 
-  width:1px; 
-  height:1px; 
-  overflow:hidden;	
+  margin-top: 0;	
 }
 
 .views-field-title {
