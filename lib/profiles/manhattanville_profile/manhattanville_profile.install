@@ -65,7 +65,7 @@ function mville_site_content() {
                     <p>A globally respected academic center, Columbia is also a vital local institution, committed to the economic, intellectual, social and cultural vitality of our neighborhoods and New York City. In that spirit, together with our West Harlem neighbors, elected representatives and civic leaders, we have developed a plan for a mixed-use academic center that provides a long-term future of shared opportunity.</p>
                     <iframe width="560" height="315" src="http://www.youtube.com/embed/CRdncAfENpY" frameborder="0" allowfullscreen></iframe>
                     <p>The Jerome L. Greene Science Center, home to the Mortimer B. Zuckerman Mind, Brain, Behavior Institute, will open in 2015.</p>',
-      'banner' => 'construction.jpg',
+      'banner' => 'home_oct1.jpg',
     ),
     array(
       'title' => 'Team',
@@ -77,7 +77,7 @@ function mville_site_content() {
       'title' => 'Academics',
       'language' => LANGUAGE_NONE,
       'type' => 'page',
-      'banner' => 'academics.jpg',
+      'banner' => 'academics_oct1.jpg',
       'bodytext' => manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum(),
     ),
     array(
@@ -85,14 +85,14 @@ function mville_site_content() {
       'language' => LANGUAGE_NONE,
       'type' => 'page',
       'bodytext' => manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_video() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum(),
-      'banner' => 'community_banner.jpg',
+      'banner' => 'community_oct1.jpg',
     ),
     array(
       'title' => 'Planning and Design',
       'language' => LANGUAGE_NONE,
       'type' => 'page',
        'bodytext' => manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum(),
-      'banner' => 'planning.jpg',
+      'banner' => 'planning_oc1.jpg',
     ),
     array(
       'title' => 'Planning',
@@ -115,6 +115,7 @@ function mville_site_content() {
       'title' => 'Construction',
       'language' => LANGUAGE_NONE,
       'type' => 'page',
+      'banner' => 'construction_oct1.jpg',
     ),
 
     array(
