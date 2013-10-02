@@ -203,7 +203,7 @@
 }
 
 .views-field-title {
-  font-family: Oswald, sans-serif;
+  /** font-family: Oswald, sans-serif; */
   text-transform: uppercase;
   font-weight: normal;
   letter-spacing: .1em;
@@ -238,3 +238,8 @@
   margin-bottom: .5em;	
 }
 
+.views-field-title span.field-content {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 600;  
+}

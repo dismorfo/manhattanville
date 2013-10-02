@@ -9,4 +9,14 @@ div.construction {
 
 .node h2.title {
   margin-top: 0;
+  font-size: 1.55em;
+}
+
+.node .title {
+  /** font-family: Oswald, sans-serif; */
+  /** font-weight: normal; */
+  /** letter-spacing: .1em; */
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.55em;
 }

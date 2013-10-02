@@ -27,17 +27,9 @@
   padding: 1em;
 }
 
-.title {
-  font-family: Oswald, sans-serif;
-  text-transform: uppercase;
-  font-weight: normal;
-  letter-spacing: .1em;
-  font-size: 1.55em;
-}
-
 .block h2 {
-  font-family: Oswald, sans-serif;
-  text-transform: uppercase;
-  font-weight: normal;
-  letter-spacing: .1em;
+  /** font-family: Oswald, sans-serif; */
+  /** font-weight: normal; */
+  /** letter-spacing: .1em; */
+
 }
