@@ -92,7 +92,7 @@ function mville_site_content() {
       'language' => LANGUAGE_NONE,
       'type' => 'page',
        'bodytext' => manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum() . manhattanville_profile_generate_lorum_ipsum(),
-      'banner' => 'planning_oc1.jpg',
+      'banner' => 'planning_oct1.jpg',
     ),
     array(
       'title' => 'Planning',
