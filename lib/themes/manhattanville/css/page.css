@@ -15,8 +15,11 @@
 }
 
 .page .pure-u-3-4 .vertical-spacer {
-    border-right: 1px solid #163e75;
-    float: left;
+    display: block;
+    width: 1px;
+    hieght: 0px;
+    position: absolute;
+    background-color: #163e75;
 }
 
 .page .secondary .pure-menu ul li {
@@ -78,10 +81,6 @@
   padding-top: 60px;
 }
 
-#block-views-news-items-block {
-
-}
-
 .page iframe {
   width: 100%;
 }
@@ -96,9 +95,8 @@
 }
 
 .page .secondary ul.menu li.first {
-    padding-top: 0px;
+  padding-top: 0px;
 }
-
 
 .main.has_sec_content .page .body {
   max-width: 100%;
