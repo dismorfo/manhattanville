@@ -83,7 +83,7 @@
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix <?php print preg_replace("/[\s_]/", "-", strtolower($title)) ?>" <?php print $attributes; ?>>
   <?php print $user_picture; ?>
   <?php print render($title_prefix); ?>
-    <h2 class="title<?php if ($is_front) : ?> element-invisible<?php endif; ?>"><?php print $title; ?></h2>
+    <h2 class="title<?php if ($is_front && $view_mode != 'teaser') : ?> element-invisible<?php endif; ?>"><?php print $title; ?></h2>
   <?php print render($title_suffix); ?>
   <?php if ($display_submitted): ?>
     <div class="submitted">

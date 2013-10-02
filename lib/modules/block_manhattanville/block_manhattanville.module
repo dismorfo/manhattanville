@@ -3,6 +3,7 @@
  * @file
  * Module file for block_manhattanville.
  */
+ 
 /**
  * Implements hook_block_info().
  *

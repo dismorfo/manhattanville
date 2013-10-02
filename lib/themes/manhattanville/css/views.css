@@ -243,3 +243,15 @@
   text-transform: uppercase;
   font-weight: 600;  
 }
+
+.block .view-news-items .field-name-field-media img {
+  width: 100%;
+}
+
+.block .view-news-items .views-row {
+  margin-bottom: 1em;
+}
+
+.block .view-news-items ul.inline li.node-readmore {
+  padding-left: 0;
+}

@@ -20,3 +20,7 @@ div.construction {
   font-weight: 600;
   font-size: 1.55em;
 }
+
+.node .field-name-field-media {
+  margin-bottom: 1em;
+}

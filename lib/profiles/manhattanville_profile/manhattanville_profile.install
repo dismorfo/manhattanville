@@ -313,6 +313,7 @@ function mville_site_content() {
       'title' => 'Sample News Item ' . $i,
       'type' => 'news',
       'body' => manhattanville_profile_generate_lorum_ipsum(),
+      'image' => manhattanville_profile_get_image(),
     );
 
     $construction_update = array(
@@ -415,8 +416,8 @@ function mville_site_content() {
   foreach ($nodes as $nodo) {
 
     $node = new stdClass();
+	$node->language = LANGUAGE_NONE;
     $node->type = $nodo['type'];
-    $node->language = $nodo['language'];
     $node->promote = 0;
     $node->sticky = 0;
 
@@ -427,7 +428,6 @@ function mville_site_content() {
 	switch ($node->type) {
       case 'page':
         $node->body['und'][0]['format'] = 'full_html';
-
         if (array_key_exists('bodytext', $nodo)) {
           $node->body['und'][0]['summary'] = text_summary($nodo['bodytext']);
           $node->body['und'][0]['value'] = $nodo['bodytext'];
@@ -488,20 +488,31 @@ function mville_site_content() {
 		  break;
 
         case 'construction_updates':
+			
           if (array_key_exists('body', $nodo)) {
           	$node->body['und'][0]['format'] = 'full_html';
             $node->body['und'][0]['summary'] = text_summary(filter_xss($nodo['body']));
             $node->body['und'][0]['value'] = filter_xss($nodo['body']);
           }
-	      $node->field_date[LANGUAGE_NONE][0] = array( 'value' => date('Y-m-d H:i:s', strtotime('now')));
+		  
+	      $node->field_date['und'][0] = array( 'value' => date('Y-m-d H:i:s', strtotime('now')));
 
           break;
 
 		case 'news':
 		case 'story':
+
 		  $node->body['und'][0]['format'] = 'full_html';
-		  $node->body[LANGUAGE_NONE][0]['summary'] = text_summary($nodo['body']);
-          $node->body[LANGUAGE_NONE][0]['value'] = $nodo['body'];
+		  $node->body['und'][0]['summary'] = text_summary($nodo['body']);
+          $node->body['und'][0]['value'] = $nodo['body'];
+          
+          if (array_key_exists('image', $nodo)) {
+            $file_path = drupal_get_path('profile', 'manhattanville_profile') . '/images/' . $nodo['image'];
+            $file = mville_add_file($file_path);
+			$file->type = 'image';
+			$file->display = 1;
+            $node->field_media['und'][0] = (array)$file;
+          }
           break;
     }
 
@@ -620,7 +631,7 @@ function mville_add_file($path) {
 }
 
 
-function  manhattanville_profile_generate_lorum_ipsum() {
+function manhattanville_profile_generate_lorum_ipsum() {
 
    $text = array(
      '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie convallis est, quis interdum urna mollis euismod. Phasellus euismod bibendum pretium. Nam vestibulum accumsan ullamcorper. Nullam nec diam tortor. Suspendisse id risus adipiscing, ullamcorper risus vehicula, pellentesque felis. Sed mattis non orci vel viverra. Sed malesuada diam mauris, non eleifend risus elementum at. Mauris accumsan dolor sit amet tellus luctus sollicitudin. Sed consequat diam eget gravida interdum. Phasellus arcu risus, vulputate vel dapibus vel, vulputate condimentum ipsum. Vestibulum orci nibh, tincidunt eu facilisis adipiscing, viverra ut enim. Nam varius dui sit amet accumsan iaculis. Vestibulum non sodales ligula. .</p>'
@@ -640,4 +651,16 @@ function  manhattanville_profile_generate_lorum_ipsum() {
 
 function  manhattanville_profile_generate_video() {
   return '<iframe width="560" height="315" src="http://www.youtube.com/embed/CRdncAfENpY" frameborder="0" allowfullscreen></iframe>';
+}
+
+function manhattanville_profile_get_image() {
+
+   $img = array(
+     'n1.jpg'
+   , 'n2.jpg'
+   , 'n3.jpg'
+   );
+
+  return $img[rand(0,2)];
+
 }
