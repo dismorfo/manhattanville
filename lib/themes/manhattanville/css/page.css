@@ -1,5 +1,5 @@
 .front h2.title {
-  
+
 }
 
 .page .secondary {
@@ -16,6 +16,7 @@
   text-transform: uppercase;
   border: none;
   text-align: right;
+  white-space: normal;
 }
 
 .page .pure-u-3-4 .vertical-spacer {
@@ -156,4 +157,31 @@ div#news-archive-link {
   float: right;
   text-align: right;
   text-transform: uppercase;
+}
+
+/* Image Inset styles copied from old site */
+div.imageBox {
+  float: right;
+  display: inline;
+  width: 250px;
+  padding: 0;
+  margin: 5px 0 5px 15px;
+  background-color: #fbecb7;
+}
+
+p.imageBoxDesc {
+  clear: both;
+  font-size: 1.1em;
+  line-height: 1.4em;
+  color: #666666;
+  margin: 2px 10px 10px 10px;
+}
+
+div.imageBoxThinner {
+  float: right;
+  display: inline;
+  width: 240px;
+  padding: 0;
+  margin: 5px 0 5px 15px;
+  background-color: #fbecb7;
 }

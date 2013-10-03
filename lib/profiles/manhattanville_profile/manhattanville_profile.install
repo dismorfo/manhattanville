@@ -100,9 +100,6 @@ function mville_site_content() {
     $i = $i + 1;
   }
 
-
-
-
   $node_map = array();
 
   foreach ($nodes as $nodo) {
@@ -218,6 +215,9 @@ function mville_site_content() {
   // Build Menus
   mville_build_menus($node_map);
 
+  // Load Images from old site
+  mville_load_old_images();
+
   // Set the Home page
   variable_set('site_frontpage', $node_map['Home']);
 }
@@ -278,6 +278,26 @@ function mville_build_menus($node_map) {
     menu_link_save($item);
   }
 
+  // Secondary Menu on Community page
+  $i = 0;
+  foreach (array(
+      'Education and Engagement',
+      'History',
+      'Community Services',
+    ) as $link) {
+
+    $item = array(
+      'link_title' => st($link),
+      'link_path' => $node_map[$link],
+      'menu_name' => 'main-menu',
+      'plid' => $menu_ids['Community'],
+      'weight' => $i,
+    );
+
+    menu_link_save($item);
+    $i = $i + 1;
+  }
+
   // Footer Menu
   foreach (array(
       'Community Services',
@@ -290,5 +310,26 @@ function mville_build_menus($node_map) {
     );
 
     menu_link_save($item);
+  }
+}
+
+
+function mville_load_old_images() {
+  $images = array(
+    'Slide_12A_HISTORIC_-_Tiemann_Factory_s.jpg',
+    'Slide_13A_HISTORIC_-_IRT_Viaduct_s.jpg',
+    'Slide_17_125th_from_above_s.jpg',
+    'Zora-Neale-Hurston_s.jpg',
+    'ddcSmall.jpg',
+    'hhasSmall.jpg',
+    'Slide_12A_HISTORIC_-_Tiemann_Factory.jpg',
+    'Slide_13A_HISTORIC_-_IRT_Viaduct.jpg',
+    'Slide_17_125th_from_above-1.jpg',
+    'icn_zoom.gif',
+  );
+
+  foreach($images as $img) {
+    $file_path = drupal_get_path('profile', 'manhattanville_profile') . '/images/' . $img;
+    $file = mville_add_file($file_path);
   }
 }
