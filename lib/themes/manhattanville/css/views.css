@@ -245,3 +245,8 @@
 .block .view-news-items ul.inline li.node-readmore {
   padding-left: 0;
 }
+
+.block .view-news-items .field-name-field-media img {
+  max-width: 100%;
+  height: auto;
+}
