@@ -58,16 +58,17 @@ function mville_permissions() {
 function mville_site_content() {
 
   foreach (scandir(dirname(__FILE__) . '/content') as $filename) {
-    $path = dirname(__FILE__) . '/content/' . $filename;
-    if (is_file($path) && preg_match('/inc$/', $path)) {
-      require_once $path;
+    $pth = dirname(__FILE__) . '/content/' . $filename;
+    if (is_file($pth) && preg_match('/inc$/', $pth)) {
+      require_once $pth;
     }
   }
 
   $nodes = array_merge(
     mville_pages(),
     mville_team_players(),
-    research_initiatives()
+    research_initiatives(),
+    community_service_records()
   );
 
 
@@ -199,6 +200,17 @@ function mville_site_content() {
           $file->type = 'image';
           $file->display = 1;
           $node->field_media['und'][0] = (array)$file;
+        }
+        break;
+
+      case 'community_service':
+        foreach ($nodo as $field => $value) {
+          if (preg_match('/^field_/', $field)) {
+            $node->{$field}['und'][0] = array(
+              'value' => $value,
+              'format' => 'full_html'
+            );
+          }
         }
         break;
     }

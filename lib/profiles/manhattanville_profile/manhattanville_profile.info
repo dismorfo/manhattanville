@@ -4,3 +4,4 @@ core = 7.x
 dependencies[] = manhattanville_features
 dependencies[] = construction_update_features
 dependencies[] = research_initiatives
+dependencies[] = community_service_database

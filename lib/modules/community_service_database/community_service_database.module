@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Community Service Database feature.
+ */
+
+include_once 'community_service_database.features.inc';
