@@ -83,3 +83,7 @@ projects[tao][version] = "3.0-beta4"
  projects[research_initiatives][download][type] = "local"
  projects[research_initiatives][download][source] = lib/modules/research_initiatives
  projects[research_initiatives][type] = "module"
+
+ projects[community_service_database][download][type] = "local"
+ projects[community_service_database][download][source] = lib/modules/community_service_database
+ projects[community_service_database][type] = "module"
